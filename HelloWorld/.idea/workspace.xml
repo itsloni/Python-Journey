@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="861a7066-c1c7-4996-8f10-d889beee5dd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/HelloWorld.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arithmetic Operations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Car Game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comparison Operators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formatted Strings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Guessing Game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/If statements.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logical Operators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Math Functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Operator Precedence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personal Practice loops and bool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project weight Converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/String methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The ATM Cash Withdrawal Simulator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/While Loops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/float.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/int function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000002187930201" />
+      <entry key="S2" value="1.0235484978769362" />
+      <entry key="S5" value="1.3407859940361913" />
+      <entry key="S10" value="2.2290498478403413" />
+      <entry key="S30" value="5.878539799719332" />
+      <entry key="S60" value="9.33119842053536" />
+      <entry key="M2" value="12.926222723658011" />
+      <entry key="M5" value="16.64279812015826" />
+      <entry key="M10" value="19.045618440660625" />
+      <entry key="M15" value="21.015987039750964" />
+      <entry key="M30" value="29.169707346661998" />
+      <entry key="H1" value="61.99427658643383" />
+      <entry key="H2" value="144.562749258181" />
+      <entry key="H4" value="253.54146749159668" />
+      <entry key="D1" value="693.5075902087419" />
+      <entry key="W1" value="1685.263363207294" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.013917592945502E-215" />
+      <entry key="S10" value="3.184207268607845E-108" />
+      <entry key="S30" value="1.4711843954881011E-36" />
+      <entry key="S60" value="1.2129239072895991E-18" />
+      <entry key="M2" value="1.1013904496763683E-9" />
+      <entry key="M5" value="2.66321105323017E-4" />
+      <entry key="M10" value="0.01861131002215429" />
+      <entry key="M15" value="0.08463561667298705" />
+      <entry key="M30" value="0.481340101737784" />
+      <entry key="H1" value="1.6852780258115876" />
+      <entry key="H2" value="4.227672183424754" />
+      <entry key="H4" value="7.4443784322805655" />
+      <entry key="D1" value="21.629797981638045" />
+      <entry key="W1" value="48.47128925169926" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="4.3877966433757557E-7" />
+      <entry key="MS500" value="0.053511978539203635" />
+      <entry key="S2" value="0.5042955040091938" />
+      <entry key="S5" value="1.0856918222070722" />
+      <entry key="S10" value="2.0898380916436325" />
+      <entry key="S30" value="5.8184311785514184" />
+      <entry key="S60" value="9.287692639425138" />
+      <entry key="M2" value="12.894870745813304" />
+      <entry key="M5" value="16.62299877040071" />
+      <entry key="M10" value="19.044941177449452" />
+      <entry key="M15" value="21.081377052553716" />
+      <entry key="M30" value="29.63302430284553" />
+      <entry key="H1" value="63.661117209792046" />
+      <entry key="H2" value="148.7712252185517" />
+      <entry key="H4" value="260.96990686159415" />
+      <entry key="D1" value="715.1311642418157" />
+      <entry key="W1" value="1733.732831161156" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3DrXTQI00pLebbOfSEAOXtPvZer" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Arithmetic Operations.executor": "Run",
+    "Python.Car Game.executor": "Run",
+    "Python.Comparison Operators.executor": "Run",
+    "Python.Formatted Strings.executor": "Run",
+    "Python.Guessing Game.executor": "Run",
+    "Python.If statements.executor": "Run",
+    "Python.Logical Operators.executor": "Run",
+    "Python.Math Functions.executor": "Run",
+    "Python.Operator Precedence.executor": "Run",
+    "Python.Personal Practice loops and bool.executor": "Run",
+    "Python.Project weight Converter.executor": "Run",
+    "Python.String methods.executor": "Run",
+    "Python.The ATM Cash Withdrawal Simulator.executor": "Run",
+    "Python.While Loops.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="861a7066-c1c7-4996-8f10-d889beee5dd5" name="Changes" comment="" />
+      <created>1779041173288</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779041173288</updated>
+      <workItem from="1779041173921" duration="1828000" />
+      <workItem from="1779217870173" duration="95024000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HelloWorld$The_ATM_Cash_Withdrawal_Simulator.coverage" NAME="The ATM Cash Withdrawal Simulator Coverage Results" MODIFIED="1779568381236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$If_statements.coverage" NAME="If statements Coverage Results" MODIFIED="1779284201105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Car_Game.coverage" NAME="Car Game Coverage Results" MODIFIED="1779402171157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Guessing_Game.coverage" NAME="Guessing Game Coverage Results" MODIFIED="1779377785578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Comparison_Operators.coverage" NAME="Comparison Operators Coverage Results" MODIFIED="1779290734278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Arithmetic_Operations.coverage" NAME="Arithmetic Operations Coverage Results" MODIFIED="1779229050393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Project_weight_Converter.coverage" NAME="Project weight Converter Coverage Results" MODIFIED="1779373631036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Formatted_Strings.coverage" NAME="Formatted Strings Coverage Results" MODIFIED="1779560715852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$String_methods.coverage" NAME="String methods Coverage Results" MODIFIED="1779219530817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Personal_Practice_loops_and_bool.coverage" NAME="Personal Practice loops and bool Coverage Results" MODIFIED="1779548984912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Logical_Operators.coverage" NAME="Logical Operators Coverage Results" MODIFIED="1779286771639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Operator_Precedence.coverage" NAME="Operator Precedence Coverage Results" MODIFIED="1779229499009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$Math_Functions.coverage" NAME="Math Functions Coverage Results" MODIFIED="1779230276925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HelloWorld$While_Loops.coverage" NAME="While Loops Coverage Results" MODIFIED="1779379587538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
