@@ -21,7 +21,7 @@
 # otherwise
 #     name looks good!
 
-name = "Loni"
+name = "Lon"
 
 if len(name) < 3:
     print(f"{name} must be at least 3 characters long")
