@@ -1,11 +1,7 @@
-# ==============================================================================
 # CHALLENGE: Advanced SIEM Alert Generator (Nested Dictionary Edition)
-# ==============================================================================
-#
 # #### THE SCENARIO
 # Your SOC (Security Operations Center) receives a raw feed of login attempts.
 # Your job is to process these logs into a highly detailed security tracker.
-#
 # For every unique username, you need to track TWO things:
 # 1. The total number of login attempts (an integer counter).
 # 2. A list of the specific status results ("SUCCESS" or "FAILED").
@@ -16,7 +12,6 @@
 # 3. For every log seen, increment their "attempts" by 1 and append the status
 #    to their "results" list.
 # 4. Do NOT use set() or hardcode any usernames.
-#
 # #### EXPECTED OUTPUT
 # When you print user_tracker at the end, it must look exactly like this:
 # {
@@ -24,8 +19,6 @@
 #   'amara_soc': {'attempts': 2, 'results': ['SUCCESS', 'FAILED']},
 #   'guest_user': {'attempts': 1, 'results': ['FAILED']}
 # }
-# ==============================================================================
-
 # Raw authentication logs from the domain controller
 import pprint
 login_logs = [
@@ -37,7 +30,6 @@ login_logs = [
     ("amara_soc", "FAILED")
 ]
 
-# Step 1: Use this main dictionary to store the nested data
 user_tracker = {}
 
 # --- YOUR CODE GOES HERE ---
@@ -49,7 +41,6 @@ for name, status in login_logs:
         }
     user_tracker[name]["Attempt"] += 1
     user_tracker[name]["Results"].append(status)
-# print(user_tracker)
 pprint.pprint(user_tracker, indent = 4)
 
 # --- END OF YOUR CODE ---

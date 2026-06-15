@@ -19,10 +19,8 @@ packet_logs = [
     "192.168.1.75"
 ]
 
-# Step 1: Use this dictionary to count the IPs tracker = {}
 ip_tracker = {}
 
-# Step 2: Use this list for the final bad actors
 ddos_block_list = []
 
 # --- YOUR CODE GOES HERE ---
@@ -35,5 +33,4 @@ for tracker_logs, number in ip_tracker.items():
         ddos_block_list.append(tracker_logs)
 
 print(ddos_block_list)
-# --- END OF YOUR CODE ---
 
