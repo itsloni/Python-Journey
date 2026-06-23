@@ -33,7 +33,6 @@ activity_log = [
     ("Bob", "Download", "High")
 ]
 
-#num__high_downloads = 0
 data_thief = {}
 
 for name, status, sensitivity in activity_log:

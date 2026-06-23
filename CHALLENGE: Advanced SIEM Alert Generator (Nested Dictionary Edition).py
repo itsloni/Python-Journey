@@ -32,7 +32,6 @@ login_logs = [
 
 user_tracker = {}
 
-# --- YOUR CODE GOES HERE ---
 for name, status in login_logs:
     if name not in user_tracker:
         user_tracker[name] = {
