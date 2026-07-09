@@ -29,6 +29,9 @@
 # 1. Use 'def' to create your function named analyze_threats
 # 2. Write your loop and bucket logic inside the function
 # 3. Use the 'return' keyword to send back the final dictionary summary
+
+
+
 def analyze_threats(log_list):
     tracking_list = {
                     "status": "ALERT",
@@ -48,7 +51,7 @@ firewall_logs = [
 automation_result = analyze_threats(firewall_logs)
 print(automation_result)
 
-# --- END OF YOUR CODE ---
+
 
 # This line runs your function using the firewall_logs and prints the output
 
