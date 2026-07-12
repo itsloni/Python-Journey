@@ -62,7 +62,7 @@ class PhishingAnalyzer:
     def get_incident_report(self):
         if self.danger_score >= 75:
            action = "CRITICAL", "DELETE_EMAIL_AND_BLOCK_SENDER"
-        elif self.danger_score == 50:
+        elif self.danger_score >= 50:
             action = "MEDIUM", "QUARANTINE_FOR_REVIEW"
         else:
             action = "LOW", "DELIVER_TO_INBOX"
