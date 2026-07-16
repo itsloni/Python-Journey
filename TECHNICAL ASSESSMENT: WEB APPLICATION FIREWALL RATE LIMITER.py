@@ -29,7 +29,6 @@ class Waf:
         self.volume_threshold = 0
         self.traffic_state = "Normal"
         self.rate_limiter = False
-
     def flagged(self):
         self.volume_threshold += 1
         if self.volume_threshold >= 100:
