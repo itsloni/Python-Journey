@@ -51,9 +51,7 @@ class PhishingAnalyzer:
 
     def scan_content(self):
         lower_case =  self.email_body.lower()
-        scan1 = "click here" in lower_case
-        scan2 = "password" in lower_case
-        if scan1 or scan2:
+        if "click here" in lower_case or "password" in lower_case:
             self.danger_score += 50
             self.contains_malicious_link = True
         if not self.sender_address.endswith(".com"):
@@ -68,7 +66,9 @@ class PhishingAnalyzer:
             action = "LOW", "DELIVER_TO_INBOX"
         return action
 
-email_to_check = PhishingAnalyzer("security@netf1ix-billing.org","Your account is suspended. CLICK HERE to update your password.")
+email_to_check = PhishingAnalyzer(
+    "security@netf1ix-billing.org",
+    "Your account is suspended. CLICK HERE to update your password.")
 email_to_check.scan_content()
 risk, recommended_plan = email_to_check.get_incident_report()
 
