@@ -41,11 +41,10 @@ def translated_message(order):
     total = 0
 
     for price in order_list:
-        if word in menu:
-            total += order_list[price]
-            print(f"{total}")
-        else:
-            print("Try ordering again please.")
+        total += order_list[price]
+    print(f"Your price total is: ${total}")
+    else:
+        print("Try ordering again please.")
 
     # OR THE SHORTEST AND LIGHTEST WAY TO WRITE THE CODE ABOVE IS:
     # for word in words:
