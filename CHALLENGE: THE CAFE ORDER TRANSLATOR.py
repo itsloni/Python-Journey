@@ -35,17 +35,22 @@ def translated_message(order):
                 order_list[word] = menu[word]
             else:
                 order_list[word] += menu[word]
+        else:
+            print(f"Can't order {word} You can only order Coffee, Tea, Cake, and Juice. ")
 
     total = 0
 
     for price in order_list:
-        total += order_list[price]
-    print(f"{total}")
+        if word in menu:
+            total += order_list[price]
+            print(f"{total}")
+        else:
+            print("Try ordering again please.")
 
     # OR THE SHORTEST AND LIGHTEST WAY TO WRITE THE CODE ABOVE IS:
     # for word in words:
     #     total += menu.get(word, 0)
     # print(f"{total}")
 
-request = input("What do you want to order? ")
+request = input("What do you want to order? ").lower()
 translated_message(request)
