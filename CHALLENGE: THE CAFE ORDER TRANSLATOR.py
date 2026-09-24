@@ -29,6 +29,10 @@ def translated_message(order):
     }
     words = order.split(" ")
     order_list = {}
+
+    is_valid = True
+
+    
     for word in words:
         if word in menu:
             if word not in order_list:
@@ -37,14 +41,16 @@ def translated_message(order):
                 order_list[word] += menu[word]
         else:
             print(f"Can't order {word} You can only order Coffee, Tea, Cake, and Juice. ")
+            is_valid = False
 
-    total = 0
-
-    for price in order_list:
-        total += order_list[price]
-    print(f"Your price total is: ${total}")
-    else:
-        print("Try ordering again please.")
+    
+    if is_valid:
+        total = 0
+        for price in order_list:
+            total += order_list[price]
+        print(f"Your price total is: ${total}")
+        else:
+            print("Try ordering again please.")
 
     # OR THE SHORTEST AND LIGHTEST WAY TO WRITE THE CODE ABOVE IS:
     # for word in words:
