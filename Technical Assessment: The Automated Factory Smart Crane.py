@@ -7,3 +7,25 @@
 # Build a state machine that handles starting the crane, picking up,
 # moving, dropping off, and handling emergency overrides safely.
 # Let's see your code."
+is_started = False
+is_picked_up = False
+is_moving = False
+
+while True:
+    input_state = input("> ").lower()
+    if input_state == "start":
+        if not is_started:
+            print("Smart crane started, getting ready to pickup")
+            is_started = True
+        else:
+            print("Crane has already started. Proceed by picking up.")
+    elif input_state == "pickup":
+        if is_started:
+            if not is_picked_up and not is_moving:
+                print("Crates has been picked up from the conveyor belt and is getting ready to start moving")
+                is_picked_up = True
+            else:
+                print("Crane has already Picked-up. Proceed by Moving the crates.")
+
+
+
