@@ -47,6 +47,14 @@ while True:
                         is_picked_up = False
                         is_moving = False
                         dropped_in_shipping_container = False
+                    elif not is_started and emergency_switch:
+                        print("Crane can not start because of emergency mode. to move on resume.")
+                        is_started = False
+                        is_picked_up = False
+                        is_moving = False
+                        emergency_switch = True
+                        is_returned = False
+                        dropped_in_shipping_container = False
                     # else:
                     #     print("Crane is back from returned and has now started, ready to e picked-up")
                     #     is_returned = False
@@ -63,6 +71,9 @@ while True:
                     #     is_moving = False
                     #     dropped_in_shipping_container = False
                     #     emergency_switch = False
+                # elif is_started == True and dropped_in_shipping_container == False and emergency_switch == True:
+                #     print("There has been an emergency stop! so crane cannot pickup. To pickup you must first resume.")
+                #     emergency_switch = True
                 else:
                     print("Crane cannot start when it has already dropped-off in shipping Container. Please return  before you can start.")
                     is_started = True
@@ -71,6 +82,9 @@ while True:
                     dropped_in_shipping_container = True
                     is_returned = False
                     emergency_switch = False
+            # elif is_started == True and is_moving == False and emergency_switch == True:
+            #     print("There has been an emergency stop! so crane cannot start. To start you must first resume.")
+            #     emergency_switch = True
             else:
                 print("Crane cannot start when it is already moving with the picked up crates. Please drop-off, return and then start.")
                 is_started = True
@@ -79,6 +93,11 @@ while True:
                 dropped_in_shipping_container = False
                 is_returned = False
                 emergency_switch = False
+        # elif is_started == True and is_picked_up == False and emergency_switch == True:
+        #     print("There has been an emergency stop! so crane cannot start. To start you must first resume.")
+        #     emergency_switch = True
+        elif is_picked_up == False and emergency_switch == True:
+            print("There has been an emergency stop! so crane cannot start. To pickup you must first resume.")
         else:
             print("Crane cannot start if it has already picked up the crates. Please proceed by moving, drop-off, and returning before you can then start the crane.")
             is_started = True
@@ -107,7 +126,7 @@ while True:
                             is_picked_up = True
                             emergency_switch = True
                         elif not is_picked_up and emergency_switch:
-                            print("There has been an emergency stop! so crane cannot pickup. To pickup you must first continue and then pickup.")
+                            print("There has been an emergency stop! so crane cannot pickup. To pickup you must first resume and then pickup.")
                             is_picked_up = False
                             emergency_switch = True
                     else:
@@ -127,6 +146,9 @@ while True:
                     dropped_in_shipping_container = True
                     is_returned = False
                     emergency_switch = False
+            # elif is_started == True and is_moving == False and emergency_switch == True:
+            #     print("There has been an emergency stop! so crane cannot pickup. To pickup you must first resume.")
+            #     emergency_switch = True
 
 
             else:
@@ -137,6 +159,9 @@ while True:
                 dropped_in_shipping_container = False
                 is_returned = False
                 emergency_switch = False
+        elif is_started == False and emergency_switch == True:
+            print("There has been an emergency stop! so crane cannot pickup. To pickup you must first resume.")
+
         else:
             print("You cannot pickup without starting. Please decide before you pick up.")
             is_started = False
@@ -192,6 +217,14 @@ while True:
                     is_returned = False
                     emergency_switch = False
 
+            # elif is_started == True and is_picked_up == False and emergency_switch == True:
+            #     print("There has been an emergency stop! so crane cannot move. To move you must first continue and then move.")
+            #     emergency_switch = True
+            #     is_moving = False
+            #     dropped_in_shipping_container = False
+            #     is_returned = False
+
+
 
             else:
                 print("Crane cannot move across the floor if it hasn't picked up the crates yet. Please pick-up first before moving.")
@@ -201,6 +234,8 @@ while True:
                 dropped_in_shipping_container = False
                 is_returned = False
                 emergency_switch = False
+        elif is_started == False and emergency_switch == True:
+            print("There has been an emergency stop! so crane cannot move. To move you must first resume.")
         else:
             print("You cannot move crates without starting the crane. Please start the crane first, then pickup to be able to move.")
             is_started = False
@@ -245,6 +280,10 @@ while True:
                         dropped_in_shipping_container = False
                         emergency_switch = False
 
+                # elif is_started == True and is_moving == False:
+                #     print("There has been an emergency stop! so crane cannot drop-off. To drop-off you must first resume to continue.")
+                #     emergency_switch = True
+
                 else:
                     print("You cannot drop-off when you haven't moved the crates or finished moving the crates")
                     is_started = True
@@ -253,6 +292,13 @@ while True:
                     dropped_in_shipping_container = False
                     is_returned = False
                     emergency_switch = False
+
+            # elif is_started == True and is_picked_up == False and emergency_switch == True:
+            #     print("There has been an emergency stop! so crane cannot drop-off. To drop-off you must first continue and then move.")
+            #     emergency_switch = True
+            #     is_moving = False
+            #     dropped_in_shipping_container = False
+            #     is_returned = False
             else:
                 print("You cannot drop-off when you have not picked up the crates in the first place. Please pickup and move, then you can drop-off")
                 is_started = True
@@ -261,6 +307,9 @@ while True:
                 dropped_in_shipping_container = False
                 is_returned = False
                 emergency_switch = False
+        elif is_started == False and emergency_switch == True:
+            print("There has been an emergency stop! so crane cannot drop-off. To drop-off you must first resume.")
+
 
         else:
             print("You cannot drop-off when you haven't even started the crane. Please start the crane, pickup, move then you can drop-off.")
@@ -309,6 +358,9 @@ while True:
                         #     is_moving = False
                         #     is_picked_up = False
                         #     dropped_in_shipping_container = False
+                    # elif is_started == True and dropped_in_shipping_container == False and emergency_switch == True:
+                    #     print("There has been an emergency stop! so crane cannot return. To return you must first resume to continue.")
+                    #     emergency_switch = True
                     else:
                         print("Crane has not dropped-off in the shipping container and cannot return. Please drop-off first before you return.")
                         is_started = True
@@ -317,6 +369,10 @@ while True:
                         dropped_in_shipping_container = False
                         is_returned = False
                         emergency_switch = False
+
+                # elif is_started == True and is_moving == False and emergency_switch == True:
+                #     print("There has been an emergency stop! so crane cannot return. To return you must first resume to continue.")
+                #     emergency_switch = True
                 else:
                     print("You cannot return when you haven't even moved the crates or finished moving the crates")
                     is_started = True
@@ -325,6 +381,14 @@ while True:
                     dropped_in_shipping_container = False
                     is_returned = False
                     emergency_switch = False
+
+            # elif is_started == True and is_picked_up == False and emergency_switch == True:
+            #     print("There has been an emergency stop! so crane cannot return. To return you must first resume to continue.")
+            #     emergency_switch = True
+                # is_moving = False
+                # dropped_in_shipping_container = False
+                # is_returned = False
+
             else:
                 print("You cannot return when you have not picked up the crates in the first place. Please pickup, move, and drop-off then you can return")
                 is_started = True
@@ -342,6 +406,8 @@ while True:
             dropped_in_shipping_container = False
             is_returned = False
             emergency_switch = False
+        elif is_started == False and emergency_switch == True:
+            print("There has been an emergency stop! so crane cannot return. To return you must first resume.")
         else:
             print("Crane has already returned back before to start. Crane can only start. Please start.")
             is_started = False
@@ -356,11 +422,11 @@ while True:
             if is_started:
                 if not emergency_switch:
                     print("[ALERT!!!] EMERGENCY HAS BEEN INITIATED TO THE CRANE. To resume type 'resume'.")
-                    is_started = True
+                    is_started = False
                     emergency_switch = True
                 else:
                     print("EMERGENCY switch has already been turned on before. Please resume to leave EMERGENCY mode")
-                    is_started = True
+                    is_started = False
                     emergency_switch = True
 
             else:
@@ -372,11 +438,11 @@ while True:
             if is_started:
                 if not emergency_switch:
                     print("Crane has been stopped. To resume type 'resume'.")
-                    is_started = True
+                    is_started = False
                     emergency_switch = True
                 else:
                     print("Crane has already been stopped.")
-                    is_started = True
+                    is_started = False
                     emergency_switch = True
             else:
                 print("Crane cannot stop when it hasn't even started.")
@@ -385,18 +451,18 @@ while True:
 
 
         elif input_state == "resume":
-            if is_started:
+            if not is_started:
                 if emergency_switch:
                     print("Emergency/stop has ended and Crane has successfully resumed.")
                     is_started = True
                     emergency_switch = False
                 else:
-                    print("Emergency/stop has already ended. Please go on with your crane.")
-                    is_started = True
+                    print("Crane cannot resume because it has not started. Please start Crane first and then initiate an emergency/stop to resume")
+                    is_started = False
                     emergency_switch = False
             else:
-                print("Crane cannot resume because it has not started. Please start Crane first and then initiate an emergency/stop to resume.")
-                is_started = False
+                print("Emergency/stop has already ended. Please go on with your crane.")
+                is_started = True
                 emergency_switch = False
     else:
         print("Enter valid input. Either you Start, Pickup, Moving, drop-off, or stop(Emergency break")
