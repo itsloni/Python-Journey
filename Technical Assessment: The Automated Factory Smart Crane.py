@@ -74,7 +74,7 @@ while True:
                 is_returned = False
                 emergency_switch = False
 
-        elif is_picked_up == False and emergency_switch == True:
+        elif is_picked_up and emergency_switch == True:
             print("There has been an emergency stop! so crane cannot start. To pickup you must first resume.")
         else:
             print("Crane cannot start if it has already picked up the crates. Please proceed by moving, drop-off, and returning before you can then start the crane.")
@@ -350,10 +350,6 @@ while True:
                     print("[ALERT!!!] EMERGENCY HAS BEEN INITIATED TO THE CRANE. To resume type 'resume'.")
                     is_started = False
                     emergency_switch = True
-                else:
-                    print("EMERGENCY switch has already been turned on before. Please resume to leave EMERGENCY mode")
-                    is_started = False
-                    emergency_switch = True
 
             elif is_started == False and emergency_switch == False:
                 print("Emergency cannot be done if crane has not started.Please start Crane first to initiate an emergency.")
@@ -371,15 +367,15 @@ while True:
                     print("Crane has been stopped. To resume type 'resume'.")
                     is_started = False
                     emergency_switch = True
-                else:
-                    print("Crane has already been stopped.")
-                    is_started = False
-                    emergency_switch = True
-            else:
-                print("Crane cannot stop when it hasn't even started.")
+
+            elif is_started == False and emergency_switch == False:
+                print("Stop cannot be done when the crane hasn't been switched on or started.")
                 is_started = False
                 emergency_switch = False
-
+            else:
+                print("Crane has already stopped")
+                is_started = False
+                emergency_switch = True
 
         elif input_state == "resume":
             if not is_started:
