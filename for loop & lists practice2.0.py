@@ -178,5 +178,53 @@
 #         compiled_report += f"and {attacks}"
 # print(compiled_report)
 
+# List Practice 1
+
+# firewall_inventory = ["Internal_FW_01", "Legacy_FW_Alpha", "Edge_FW_02"]
+#
+# firewall_inventory.insert(0, "DMZ_Gateway_Premium")
+# firewall_inventory.append("Core_FW_03")
+# firewall_inventory.remove("Legacy_FW_Alpha")
+#
+# print(firewall_inventory)
 
 
+#List Practice 2
+# event_timeline = ["User_Login", "File_Downloaded", "Malware_Executed", "System_Crash", "Logs_Cleared"]
+# incident_index = event_timeline.index("Malware_Executed")
+# pre_incident_timeline = event_timeline[:incident_index + 1]
+#
+# print(f"Incident occurred at index: {incident_index}")
+# print(f"Isolated Timeline: {pre_incident_timeline}")
+
+##List Practice 3
+#
+# feed_alpha = ["Phishing_URL", "Exploit_ZeroDay", "Malicious_IP"]
+# feed_beta = ["Exploit_ZeroDay", "Bad_Domain", "Exploit_ZeroDay"]
+#
+# all_indicators = feed_alpha + feed_beta
+# zeroday_count = all_indicators.count("Exploit_ZeroDay")
+#
+# print(f"Combined Indicators: {all_indicators}")
+# print(f"Total ZeroDay Overlaps: {zeroday_count}")
+
+# The Sanitized Audit Log 4
+# raw_logs = ["User_Login", "Domain_Controller_Alpha", "File_Access"]
+# sanitized_logs = raw_logs.copy()
+# sanitized_logs[1] = "HIDDEN_ASSET"
+#
+# print(f"Original Raw Logs: {raw_logs}")
+# print(f"Sanitized Audit Logs: {sanitized_logs}")
+
+
+# The Memory Buffer Flush five
+packet_buffer = ["Packet_01", "Packet_02", "Packet_03", "Packet_04"]
+
+packet_buffer_size = len(packet_buffer)
+if packet_buffer_size >= 3:
+    print("THRESHOLD EXCEEDED: FLUSHING MEMORY!")
+    packet_buffer.clear()
+elif packet_buffer_size <= 3:
+    print("Buffer Safe.")
+
+print(f"Final Packet Buffer State: {packet_buffer}")

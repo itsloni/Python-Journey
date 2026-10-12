@@ -65,8 +65,8 @@ api_event = {
 }
 
 api_event["identity_block"] = {
-    "user" : "admin_vlad",
-    "role" : "Super_Admin"
+    "user" : api_event["actor_user"],
+    "role" : api_event["actor_role"],
 }
 del api_event["actor_user"]
 del api_event["actor_role"]
