@@ -144,7 +144,7 @@ output = ""
 for word in comment_word:
     output += comment_converter.get(word, "Huh?") + " "
 print(output)
-    
+
 
 
 
