@@ -52,5 +52,6 @@ shopping_dict = {
     "item_001": {"item": "apple", "price": 2},
     "item_002": {"item": "milk", "price": 3}
 }
+
 new_variable = shopping_dict["item_002"].pop("price")
 print(new_variable)
