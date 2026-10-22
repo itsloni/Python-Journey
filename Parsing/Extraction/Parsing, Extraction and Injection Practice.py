@@ -128,6 +128,9 @@ quarantine_timestamps = []
 global_lockdown = False
 
 timestamp = history[0]
+port = int(history[1])
+is_malicious = history[2]
+print(timestamp)
 
 # [WRITE YOUR CHALLENGE 4 CODE HERE]
 
