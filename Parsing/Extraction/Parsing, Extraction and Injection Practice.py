@@ -132,11 +132,15 @@ for history in alert_packet['incident_history']:
     timestamp = history[0]
     port = int(history[1])
     is_malicious = history[2]
-#or you can replace that 4 line for liop with this single line down
-# for timestamp. port, is_malicious in alert_packet['incident_history']: # This is the shortest and best approach
-    # cause it's just a line and more efficient.
     if is_malicious == True and port == 22:
         quarantine_timestamps.append(timestamp)
+
+# OR you can replace that 4 line for loop with this single line below
+# for timestamp, port, is_malicious in alert_packet['incident_history']: # This is the shortest and best approach
+# cause it's just a line and more efficient.
+# Then because True is boolean already and python evaluates it directly without needing the == True comparison.
+# so the if statement below is more efficient.
+#     if is_malicious and port == 22:
 
 if len(quarantine_timestamps) >= 2:
     global_lockdown = True
