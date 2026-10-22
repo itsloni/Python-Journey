@@ -187,7 +187,9 @@ for ip, port in alert_potluck:
             "attacked_ports" : []
         }
 
-   
+reconnaissance_map[ip]["hit_count"] += 1
+reconnaissance_map[ip]["attacked_ports"].append(port)
+
 
 
 # print("--- CHALLENGE 5 RESULTS ---")
