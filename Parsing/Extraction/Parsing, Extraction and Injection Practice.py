@@ -11,6 +11,7 @@
 # 3. Append the string "Cloud_WAF_05" to the very end of 'firewalls'.
 # 4. Use a list method to completely clear out the 'temporary_buffer' list.
 # ==============================================================================
+from asyncio import log
 
 firewalls = ["FW_Edge_01", "FW_Internal_02", "FW_DMZ_03", "FW_Backup_04"]
 temporary_buffer = ["Packet_Dump_A", "Packet_Dump_B"]
@@ -20,7 +21,7 @@ legacy_zone = []
 #legacy_zone = firewalls[:3] # You can actually just create the new extracted list directly without creating an empty list first.
 # legacy_zone.append(firewalls[0:3]) # This will extract the list but also extract the bracket of the list which turns the new list created a nested list.
 legacy_zone.extend(firewalls[0:3]) # Use .extend() when you're extracting directly from a list into another list so it's flat.
-#if hostnames not hostnames[3] for hostnames in firewalls] # i don't know how to use this comprehension lol.
+#[hostname for hostnames in firewalls if hostnames != firewalls[3]] # I don't know how to use this comprehension lol.
 
 firewalls.insert(0,"NGFW_Core_Secure")
 firewalls.append("Cloud_WAF_05")
