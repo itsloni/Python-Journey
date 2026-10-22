@@ -6,7 +6,7 @@ alert_payload = {
 }
 
 target_ip, port, protocol = alert_payload["socket_connection"]
-
+print("-----CHALLENGE 1-----")
 print(f"Extracted IP: {target_ip}")
 print(f"Extracted Port: {port}")
 print(f"Extracted Protocol: {protocol}\n\n")
@@ -20,6 +20,7 @@ monitored_endpoints = [
 ]
 
 monitored_endpoints[1]["hardened_config"] = ("MFA_REQUIRED", 90)
+print("-----CHALLENGE 2-----")
 print(f"{monitored_endpoints}\n\n")
 
 # TEST 3
@@ -31,7 +32,7 @@ user_security_profile = {
 }
 
 user_security_profile["recent_blocks"].append("BLOCK_MALWARE_URL")
-
+print("-----CHALLENGE 3-----")
 print(f"{user_security_profile}\n\n")
 
 #TEST 4
@@ -50,6 +51,7 @@ del device_profile["network_settings"]["legacy_protocol"]
 # #or
 # del does not work with .get()
 # del device_profile.get("network_settings", {}).get("legacy_protocol") # This does not go with del its only used for reading like data no writing or deleting
+print("-----CHALLENGE 4-----")
 print(f"{device_profile}\n\n")
 
 # TEST FIVE
@@ -73,6 +75,7 @@ for packets in alert_packet["connection_history"]:
     if dst_port == 22:
         flagged_ips.append(src_ip)
 
+print("-----CHALLENGE 5-----")
 print(f"Flagged Intrusion IPs: {flagged_ips}\n\n")
 
 
@@ -107,10 +110,11 @@ for logs in connection_logs:
 if len(exfiltration_suspects) > 0:
     quarantine_protocol_active = True
 
+print("-----CHALLENGE 6-----")
 print(f"Exfiltration Suspects: {exfiltration_suspects}")
 print(f"QUARANTINE PROTOCOL ACTIVE: {quarantine_protocol_active}\n\n")
 
-
+#TEST 7
 num_converter = {
     "1" : "one",
     "2" : "two",
@@ -121,10 +125,12 @@ number = input("Input a number or multiple no's from 1 - 3: ")
 output = " "
 for num in  number:
         output += num_converter.get(num, "!") + " "
+        
+print("-----CHALLENGE 7-----")
 print(f"{output}\n\n")
 #
 #
-# Test 7 on dictionaries
+# Test 8 on dictionaries
 comment = input("input an emoji with colon ':' and brackets ')' or '(' :> ")
 comment_word = comment.split(" ")
 comment_converter = {
@@ -135,6 +141,8 @@ comment_converter = {
 output = ""
 for word in comment_word:
     output += comment_converter.get(word, "Huh?") + " "
+
+print("-----CHALLENGE 8-----")
 print(output)
 
 
