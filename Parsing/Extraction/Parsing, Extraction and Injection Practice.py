@@ -132,6 +132,9 @@ for history in alert_packet['incident_history']:
     timestamp = history[0]
     port = int(history[1])
     is_malicious = history[2]
+#or you can replace that 4 line for liop with this single line down
+# for timestamp. port, is_malicious in alert_packet['incident_history']: # This is the shortest and best approach
+    # cause it's just a line and more efficient.
     if is_malicious == True and port == 22:
         quarantine_timestamps.append(timestamp)
 
