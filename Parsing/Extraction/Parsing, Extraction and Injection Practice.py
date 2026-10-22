@@ -16,14 +16,20 @@ firewalls = ["FW_Edge_01", "FW_Internal_02", "FW_DMZ_03", "FW_Backup_04"]
 temporary_buffer = ["Packet_Dump_A", "Packet_Dump_B"]
 
 # [WRITE YOUR CHALLENGE 1 CODE HERE]
+legacy_zone = []
+for hostnames in firewalls:
+    cut = firewalls[:3]
+    legacy_zone.append(cut)
+    print(cut)
+    print(legacy_zone)
 
 
 
 
-print("--- CHALLENGE 1 RESULTS ---")
-print(f"Legacy Zone: {legacy_zone if 'legacy_zone' in locals() else 'Not Found'}")
-print(f"Updated Firewalls: {firewalls}")
-print(f"Cleared Buffer: {temporary_buffer}\n\n")
+# print("--- CHALLENGE 1 RESULTS ---")
+# print(f"Legacy Zone: {legacy_zone if 'legacy_zone' in locals() else 'Not Found'}")
+# print(f"Updated Firewalls: {firewalls}")
+# print(f"Cleared Buffer: {temporary_buffer}\n\n")
 
 
 # ==============================================================================
@@ -53,8 +59,8 @@ log_entry = {
 
 
 
-print("--- CHALLENGE 2 RESULTS ---")
-print(f"Overhauled Log Entry: {log_entry}\n\n")
+# print("--- CHALLENGE 2 RESULTS ---")
+# print(f"Overhauled Log Entry: {log_entry}\n\n")
 
 
 # ==============================================================================
@@ -79,12 +85,12 @@ approved_operators = ["sys_admin_dee", "security_bot_01", "soc_lead_vlad"]
 
 
 
-print("--- CHALLENGE 3 RESULTS ---")
-print(f"Event ID: {event_id if 'event_id' in locals() else 'Not Found'}")
-print(f"Status Code: {status_code if 'status_code' in locals() else 'Not Found'}")
-print(f"Trailing Hex: {trailing_hex_data if 'trailing_hex_data' in locals() else 'Not Found'}")
-print(f"Hardened Whitelist Type: {type(immutable_whitelist) if 'immutable_whitelist' in locals() else 'Not Found'}")
-print(f"Hardened Whitelist Content: {immutable_whitelist if 'immutable_whitelist' in locals() else 'Not Found'}\n\n")
+# print("--- CHALLENGE 3 RESULTS ---")
+# print(f"Event ID: {event_id if 'event_id' in locals() else 'Not Found'}")
+# print(f"Status Code: {status_code if 'status_code' in locals() else 'Not Found'}")
+# print(f"Trailing Hex: {trailing_hex_data if 'trailing_hex_data' in locals() else 'Not Found'}")
+# print(f"Hardened Whitelist Type: {type(immutable_whitelist) if 'immutable_whitelist' in locals() else 'Not Found'}")
+# print(f"Hardened Whitelist Content: {immutable_whitelist if 'immutable_whitelist' in locals() else 'Not Found'}\n\n")
 
 
 # ==============================================================================
@@ -119,10 +125,10 @@ global_lockdown = False
 
 
 
-
-print("--- CHALLENGE 4 RESULTS ---")
-print(f"Quarantine Timestamps: {quarantine_timestamps}")
-print(f"GLOBAL LOCKDOWN ACTIVE: {global_lockdown}\n\n")
+#
+# print("--- CHALLENGE 4 RESULTS ---")
+# print(f"Quarantine Timestamps: {quarantine_timestamps}")
+# print(f"GLOBAL LOCKDOWN ACTIVE: {global_lockdown}\n\n")
 
 
 # ==============================================================================
@@ -158,8 +164,8 @@ reconnaissance_map = {}
 
 
 
-
-print("--- CHALLENGE 5 RESULTS ---")
-import json
-print(json.dumps(reconnaissance_map, indent=4))
+#
+# print("--- CHALLENGE 5 RESULTS ---")
+# import json
+# print(json.dumps(reconnaissance_map, indent=4))
 # ==============================================================================
