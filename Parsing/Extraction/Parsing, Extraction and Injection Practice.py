@@ -122,9 +122,12 @@ alert_packet = {
         ("01:25:10", 80, True)
     ]
 }
+for history in alert_packet['incident_history']:
 
 quarantine_timestamps = []
 global_lockdown = False
+
+timestamp = history[0]
 
 # [WRITE YOUR CHALLENGE 4 CODE HERE]
 

@@ -125,7 +125,7 @@ number = input("Input a number or multiple no's from 1 - 3: ")
 output = " "
 for num in  number:
         output += num_converter.get(num, "!") + " "
-        
+
 print("-----CHALLENGE 7-----")
 print(f"{output}\n\n")
 #
