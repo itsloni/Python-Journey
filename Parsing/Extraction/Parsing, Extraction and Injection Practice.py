@@ -17,20 +17,19 @@ temporary_buffer = ["Packet_Dump_A", "Packet_Dump_B"]
 
 # [WRITE YOUR CHALLENGE 1 CODE HERE]
 legacy_zone = []
-for hostnames in firewalls:
-    cut = firewalls[:3]
-    legacy_zone.append(cut)
-    print(cut)
-    print(legacy_zone)
+# legacy_zone.append(firewalls[0:3]) # This will extract the list but also extract the bracket of the list which turns the new list created a nested list.
+legacy_zone.extend(firewalls[0:3]) # Use .extend() when you're extracting directly from a list into another list so it's flat.
+#[if hostnames not hostnames[3] for hostnames in firewalls] # i don kno whow to use this comprehension lol.
+firewalls.insert(0,"NGFW_Core_Secure")
+firewalls.append("Cloud_WAF_05")
+temporary_buffer.clear()
+print(legacy_zone)
 
 
-
-
-# print("--- CHALLENGE 1 RESULTS ---")
-# print(f"Legacy Zone: {legacy_zone if 'legacy_zone' in locals() else 'Not Found'}")
-# print(f"Updated Firewalls: {firewalls}")
-# print(f"Cleared Buffer: {temporary_buffer}\n\n")
-
+print("--- CHALLENGE 1 RESULTS ---")
+print(f"Legacy Zone: {legacy_zone if 'legacy_zone' in locals() else 'Not Found'}")
+print(f"Updated Firewalls: {firewalls}")
+print(f"Cleared Buffer: {temporary_buffer}\n\n")
 
 # ==============================================================================
 # CHALLENGE 2: THE SECURE METADATA OVERHAUL
