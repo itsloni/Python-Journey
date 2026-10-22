@@ -122,12 +122,13 @@ alert_packet = {
         ("01:25:10", 80, True)
     ]
 }
-for history in alert_packet['incident_history']:
+
 
 quarantine_timestamps = []
 global_lockdown = False
 
 # [WRITE YOUR CHALLENGE 4 CODE HERE]
+for history in alert_packet['incident_history']:
 timestamp = history[0]
 port = int(history[1])
 is_malicious = history[2]
