@@ -135,11 +135,12 @@ for history in alert_packet['incident_history']:
     if is_malicious == True and port == 22:
         quarantine_timestamps.append(timestamp)
 
+if len(quarantine_timestamps) >= 2:
+    global_lockdown = True
 
-#
-# print("--- CHALLENGE 4 RESULTS ---")
-# print(f"Quarantine Timestamps: {quarantine_timestamps}")
-# print(f"GLOBAL LOCKDOWN ACTIVE: {global_lockdown}\n\n")
+print("--- CHALLENGE 4 RESULTS ---")
+print(f"Quarantine Timestamps: {quarantine_timestamps}")
+print(f"GLOBAL LOCKDOWN ACTIVE: {global_lockdown}\n\n")
 
 
 # ==============================================================================
