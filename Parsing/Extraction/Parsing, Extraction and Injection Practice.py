@@ -192,9 +192,7 @@ for ip, port in alert_potluck:
     # reconnaissance_map[ip]["attacked_ports"] = reconnaissance_map[ip]["attacked_ports"].append(port) #I think this
     # also means the same thing as the line above this just checking.UPDATE: Well this method broke.
 
-print(reconnaissance_map)
-
-# print("--- CHALLENGE 5 RESULTS ---")
-# import json
-# print(json.dumps(reconnaissance_map, indent=4))
+print("--- CHALLENGE 5 RESULTS ---")
+import json
+print(json.dumps(reconnaissance_map, indent=4))
 # ==============================================================================
