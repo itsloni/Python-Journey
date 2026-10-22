@@ -180,10 +180,16 @@ alert_potluck = [
 reconnaissance_map = {}
 
 # [WRITE YOUR CHALLENGE 5 CODE HERE]
+for ip, port in alert_potluck:
+    if ip not in reconnaissance_map:
+        reconnaissance_map[ip] = {
+            "hit_count" : 0,
+            "attacked_ports" : []
+        }
+
+   
 
 
-
-#
 # print("--- CHALLENGE 5 RESULTS ---")
 # import json
 # print(json.dumps(reconnaissance_map, indent=4))
