@@ -87,15 +87,15 @@ approved_operators = ["sys_admin_dee", "security_bot_01", "soc_lead_vlad"]
 
 # [WRITE YOUR CHALLENGE 3 CODE HERE]
 
+event_id, status_code, *trailing_hex_data = raw_payload
+immutable_whitelist = tuple(approved_operators)
 
-
-
-# print("--- CHALLENGE 3 RESULTS ---")
-# print(f"Event ID: {event_id if 'event_id' in locals() else 'Not Found'}")
-# print(f"Status Code: {status_code if 'status_code' in locals() else 'Not Found'}")
-# print(f"Trailing Hex: {trailing_hex_data if 'trailing_hex_data' in locals() else 'Not Found'}")
-# print(f"Hardened Whitelist Type: {type(immutable_whitelist) if 'immutable_whitelist' in locals() else 'Not Found'}")
-# print(f"Hardened Whitelist Content: {immutable_whitelist if 'immutable_whitelist' in locals() else 'Not Found'}\n\n")
+print("--- CHALLENGE 3 RESULTS ---")
+print(f"Event ID: {event_id if 'event_id' in locals() else 'Not Found'}")
+print(f"Status Code: {status_code if 'status_code' in locals() else 'Not Found'}")
+print(f"Trailing Hex: {trailing_hex_data if 'trailing_hex_data' in locals() else 'Not Found'}")
+print(f"Hardened Whitelist Type: {type(immutable_whitelist) if 'immutable_whitelist' in locals() else 'Not Found'}")
+print(f"Hardened Whitelist Content: {immutable_whitelist if 'immutable_whitelist' in locals() else 'Not Found'}\n\n")
 
 
 # ==============================================================================
