@@ -189,7 +189,8 @@ for ip, port in alert_potluck:
 
 reconnaissance_map[ip]["hit_count"] += 1
 reconnaissance_map[ip]["attacked_ports"].append(port)
-
+# reconnaissance_map[ip]["attacked_ports"] = reconnaissance_map[ip]["attacked_ports"].append(port) # I think this
+# also means the same thing as the line above this just checking.
 
 
 # print("--- CHALLENGE 5 RESULTS ---")
