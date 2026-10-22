@@ -56,11 +56,16 @@ log_entry = {
 
 # [WRITE YOUR CHALLENGE 2 CODE HERE]
 
+log_entry["threat_level"] = "HIGH"
+log_entry["identity_block"] = {
+    "user" : log_entry["raw_user"],
+    "ip" : log_entry["raw_ip"]
+}
+del log_entry["raw_user"]
+del log_entry["raw_ip"]
 
-
-
-# print("--- CHALLENGE 2 RESULTS ---")
-# print(f"Overhauled Log Entry: {log_entry}\n\n")
+print("--- CHALLENGE 2 RESULTS ---")
+print(f"Overhauled Log Entry: {log_entry}\n\n")
 
 
 # ==============================================================================
