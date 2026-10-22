@@ -129,10 +129,11 @@ global_lockdown = False
 
 # [WRITE YOUR CHALLENGE 4 CODE HERE]
 for history in alert_packet['incident_history']:
-timestamp = history[0]
-port = int(history[1])
-is_malicious = history[2]
-print(timestamp)
+    timestamp = history[0]
+    port = int(history[1])
+    is_malicious = history[2]
+    if is_malicious == True and port == 22:
+        quarantine_timestamps.append(timestamp)
 
 
 #
