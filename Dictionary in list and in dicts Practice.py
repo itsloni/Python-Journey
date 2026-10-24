@@ -54,4 +54,4 @@ shopping_dict = {
 }
 
 new_variable = shopping_dict["item_002"].pop("price")
-print(new_variable)
+print(f"{new_variable}\n")
