@@ -12,6 +12,7 @@ if fate > 15:
 else:
     server_profile["status"] = "MONITORED"
 
+print("--- CHALLENGE 1 RESULTS ---")
 print(f"{server_profile}\n\n")
 
 # The Mitigation Cleanup
@@ -26,7 +27,7 @@ firewall_profile["patched_count"] *= 2
 firewall_profile["vulnerability_count"] -= 2
 del firewall_profile["active_alert_id"]
 
-print("--- CHALLENGE 1 RESULTS ---")
+print("--- CHALLENGE 2 RESULTS ---")
 print(f"{firewall_profile}\n\n")
 
 # Deep Identity Audit
@@ -43,20 +44,22 @@ if user_profile["access_details"]["clearance_level"] == "Top_Secret":
 else:
     user_profile["access_details"]["mfa_status"] = "OPTIONAL"
 
-print("--- CHALLENGE 2 RESULTS ---")
+print("--- CHALLENGE 3 RESULTS ---")
 print(f"{user_profile}\n\n")
 
 #  Threat Intelligence Enrichment
-# network_alert = {
-#     "alert_id": "ALRT_881",
-#     "source_ip": "185.220.101.5"
-# }
-#
-# network_alert["threat_intel"] = {
-#     "risk_score" : 8,
-#     "malware_family" : "Ransomware"
-# }
-# print(network_alert)
+network_alert = {
+    "alert_id": "ALRT_881",
+    "source_ip": "185.220.101.5"
+}
+
+network_alert["threat_intel"] = {
+    "risk_score" : 8,
+    "malware_family" : "Ransomware"
+}
+
+print("--- CHALLENGE 4 RESULTS ---")
+print(f"{network_alert}\n\n")
 
 # The Log Structural Overhaul
 api_event = {
@@ -73,4 +76,5 @@ api_event["identity_block"] = {
 del api_event["actor_user"]
 del api_event["actor_role"]
 
-print(api_event)
+print("--- CHALLENGE 5 RESULTS ---")
+print(f"{api_event}\n\n")
