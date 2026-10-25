@@ -82,6 +82,9 @@ log_beta = format_connection_log("10.0.0.12", 443)
 
 print("-----TEST 3-----")
 print(log_alpha)
-print(log_beta)
+print(f"{log_beta}\n\n")
+
+
+
 
 
