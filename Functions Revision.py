@@ -12,7 +12,8 @@ def emoji_converter(emoji):
     return output
 
 print("-----CHALLENGE 8-----")
-print(f"{emoji_converter("Hello I am very :) . Never :( . so don't be :( you hear? Be :) !")}\n\n") 
+print(f"{emoji_converter("Hello I am very :) . Never :( . so don't be :( you hear? Be :) !")}\n\n") # or You can put the input inside
+print(f"{emoji_converter(input("what do you want to convert? "))}\n\n")
 
 
 
