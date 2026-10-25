@@ -134,7 +134,11 @@ print(f"Isolated Threats List: {isolated_threats}\n\n")
 
 # [WRITE YOUR TEST 5 FUNCTION HERE]
 
-
+def is_admin_account(user_dict):
+    safe_user_dict = user_dict["role"].lower()
+    
+    else:
+        return False
 
 
 # Pipeline Execution:
