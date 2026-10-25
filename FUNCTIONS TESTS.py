@@ -152,6 +152,7 @@ account_beta = {"username": "jane_clerk", "role": "Guest", "dept": "Finance"}
 verdict_alpha = is_admin_account(account_alpha)
 verdict_beta = is_admin_account(account_beta)
 
+
 print("-----TEST 5-----")
 print(f"Account Alpha Admin Status: {verdict_alpha}")
 print(f"Account Beta Admin Status: {verdict_beta}\n\n")
@@ -173,6 +174,10 @@ print(f"Account Beta Admin Status: {verdict_beta}\n\n")
 # ==============================================================================
 
 # [WRITE YOUR TEST 6 FUNCTION HERE]
+def process_security_event(user, status, evidence_list = []):
+    # evidence_list = []
+    safe_status = status.lower()
+    if safe_status == "failed":
 
 
 
