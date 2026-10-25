@@ -69,9 +69,10 @@ print(f"Calculated Score 2: {score_2}\n\n")
 # ==============================================================================
 
 # [WRITE YOUR TEST 3 FUNCTION HERE]
-
-
-
+def format_conmnection_log(ip_address, port):
+    port = 22
+    message = f"ALERT: cONNECTION FROM {ip_address} on port {port}"
+    return message
 
 # Pipeline Execution:
 # Run 1: Utilizing the default port value
