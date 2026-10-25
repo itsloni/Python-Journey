@@ -157,3 +157,39 @@ print(f"Account Alpha Admin Status: {verdict_alpha}")
 print(f"Account Beta Admin Status: {verdict_beta}\n\n")
 
 
+# ==============================================================================
+# FUNCTION TEST 6: THE CENTRAL LOG COUNT ENRICHMENT ENGINE
+# ------------------------------------------------------------------------------
+# SCENARIO: You are writing an auditing tool that flags suspicious logins. Every
+#           time a login fails, your function must append the user to an evidence
+#           list and track the global damage counter.
+#
+# TASKS:
+# 1. Define a function named 'process_security_event' that accepts exactly
+#    three parameters: 'user', 'status', and 'evidence_list'.
+# 2. Inside the function, write a condition: If the 'status' string equals
+#    the value "failed", use a list method to append 'user' to the 'evidence_list'.
+# 3. Use 'return' to send the updated 'evidence_list' object back to the main script.
+# ==============================================================================
+
+# [WRITE YOUR TEST 6 FUNCTION HERE]
+
+
+
+
+# Pipeline Execution:
+threat_roster = []
+
+# Event 1: Normal user login succeeds
+threat_roster = process_security_event("alex_dev", "success", threat_roster)
+
+# Event 2: Attacker fails a login
+threat_roster = process_security_event("hacker_bot_1", "failed", threat_roster)
+
+# Event 3: Another attacker fails a login
+threat_roster = process_security_event("unknown_guest", "failed", threat_roster)
+
+print("-----TEST 6-----")
+print(f"Final Global Threat Roster: {threat_roster}")
+print(f"Total High-Risk Events Documented: {len(threat_roster)}")
+
