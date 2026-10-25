@@ -85,6 +85,32 @@ print(log_alpha)
 print(f"{log_beta}\n\n")
 
 
+# ==============================================================================
+# FUNCTION TEST 4: THE MALICIOUS LOG FILTER APPLIANCE
+# ------------------------------------------------------------------------------
+# SCENARIO: You want to build a reusable filtering tool. It must accept a raw list
+#           of log statuses and return a clean, processed list of only the failures.
+#
+# TASKS:
+# 1. Define a function named 'filter_malicious_logs' that accepts a single
+#    parameter named 'log_list'.
+# 2. Inside the function, initialize an empty evidence list named 'failures'.
+# 3. Write a 'for' loop to iterate through the incoming 'log_list'.
+# 4. If a log string equals "failed", append it to your 'failures' list.
+# 5. Use 'return' to send the completed 'failures' list back out of the function.
+# ==============================================================================
+
+# [WRITE YOUR TEST 4 FUNCTION HERE]
+
+
+
+
+# Pipeline Execution:
+raw_traffic_logs = ["success", "failed", "success", "failed", "failed", "success"]
+isolated_threats = filter_malicious_logs(raw_traffic_logs)
+
+print("-----TEST 4-----")
+print(f"Isolated Threats List: {isolated_threats}")
 
 
 
