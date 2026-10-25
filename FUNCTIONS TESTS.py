@@ -178,8 +178,8 @@ def process_security_event(user, status, evidence_list = []):
     # evidence_list = []
     safe_status = status.lower()
     if safe_status == "failed":
-
-
+        evidence_list.append(user)
+    return evidence_list
 
 
 # Pipeline Execution:
