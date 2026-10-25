@@ -140,8 +140,9 @@ for lists in login_records:
 
 if violators:
     audit_failed = True
+    print("-----CHALLENGE 7.2-----")
     print(f"Audit Failed Status: {audit_failed}")
-    print(f"Violators List: {violators}")
+    print(f"Violators List: {violators}\n\n")
 #
 #
 
