@@ -183,7 +183,9 @@ for attacks in detected_attacks:
         compiled_report += f"{attacks}, "
     else:
         compiled_report += f"and {attacks}"
-print(compiled_report)
+
+print("-----CHALLENGE 8-----")
+print(f"{compiled_report}\n\n")
 
 # List Practice 1
 firewall_inventory = ["Internal_FW_01", "Legacy_FW_Alpha", "Edge_FW_02"]
