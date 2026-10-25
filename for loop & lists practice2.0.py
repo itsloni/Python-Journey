@@ -8,7 +8,8 @@ for ports in open_ports:
         checker.append(ports)
         system_status = "COMPROMISED"
 # # 4. The Final Report (This runs AFTER the loop is totally done)
-print(f"Final Audit Result: port{checker} {system_status}")
+print("-----CHALLENGE 1-----")
+print(f"Final Audit Result: port{checker} {system_status}\n\n")
 
 #TEST 2
 active_users = ["alex", "sarah", "RoOt", "blake"]
