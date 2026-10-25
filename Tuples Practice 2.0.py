@@ -48,5 +48,6 @@ admin_list = ["root_user", "sys_admin_vlad", "global_ops_dee"]
 
 hardened_admins = tuple(admin_list)
 
+print("-----CHALLENGE 5-----")
 print(f"Hardened Secure Tuple: {hardened_admins}")
-print(f"Data type verified: {type(hardened_admins)}") #First time using type
+print(f"Data type verified: {type(hardened_admins)}\n\n") #First time using type
