@@ -11,12 +11,12 @@
 # ==============================================================================
 
 # [WRITE YOUR TEST 1 FUNCTION HERE]
-
-
-
+def clean_ip_address(raw_ip):
+    cleaned_ip = raw_ip.strip(" ")
+    return cleaned_ip
 
 # Pipeline Execution:
-# messy_input = "   192.168.1.105   "
-# sanitized_result = clean_ip_address(messy_input)
-#
-# print(f"Sanitized IP Output: '{sanitized_result}'")
+messy_input = "   192.168.1.105   "
+sanitized_result = clean_ip_address(messy_input)
+
+print(f"Sanitized IP Output: '{sanitized_result}'")
