@@ -19,6 +19,7 @@ def clean_ip_address(raw_ip):
 messy_input = "   192.168.1.105   "
 sanitized_result = clean_ip_address(messy_input)
 
+print("-----TEST 1-----")
 print(f"Sanitized IP Output: '{sanitized_result}'\n\n")
 
 
