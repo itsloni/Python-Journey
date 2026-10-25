@@ -21,8 +21,17 @@ def greet_user(first_name, last_name):
     print(f"Hi there! {first_name} {last_name}")
     print("Welcome aboard")
 
+print("-----CHALLENGE Functions Practice-----")
 print("Start")
 greet_user("Loni", "Ayoola")
 greet_user("Mary", "Magdalene")
-print("Finish")
+print("Finish\n\n")
 
+
+# How to create functions that return values using Functions
+def square(number):
+    return number * number
+
+print("-----CHALLENGE Functions Return Practice-----")
+result = square(5)
+print(result)
