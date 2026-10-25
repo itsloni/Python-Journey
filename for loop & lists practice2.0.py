@@ -32,9 +32,9 @@ divider_line = ""
 for line in range(line_length):
     divider_line += "-"
 
-
+print("-----CHALLENGE 3-----")
 print("SECURITY RE-AUDIT ALERT")
-print(divider_line)
+print(f"{divider_line}\n\n")
 
 #TEST 4
 active_users = ["Alex", "Admin_Sarah", "blake", "Dave_ADMIN"]
