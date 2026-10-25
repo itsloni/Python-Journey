@@ -53,7 +53,8 @@ for user in active_users:
     else:
         secure_report.append(user)
 
-print(f"Public Secure Report: {secure_report}")
+print("-----CHALLENGE 4-----")
+print(f"Public Secure Report: {secure_report}\n\n")
 
 #TEST 5
 login_logs = ["failed", "success", "failed", "failed", "success", "failed", "failed", "failed"]
