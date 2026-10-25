@@ -101,9 +101,12 @@ print(f"{log_beta}\n\n")
 # ==============================================================================
 
 # [WRITE YOUR TEST 4 FUNCTION HERE]
-
-
-
+def filter_malicious_logs(raw_traffic_logs):
+    failures = []
+    for logs in raw_traffic_logs:
+        all_logs = logs.lower()
+        if all_logs == "failed":
+            
 
 # Pipeline Execution:
 raw_traffic_logs = ["success", "failed", "success", "failed", "failed", "success"]
