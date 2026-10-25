@@ -117,4 +117,35 @@ print("-----TEST 4-----")
 print(f"Isolated Threats List: {isolated_threats}\n\n")
 
 
+# ==============================================================================
+# FUNCTION TEST 5: THE ASSET SECURITY VERDICT GATING
+# ------------------------------------------------------------------------------
+# SCENARIO: You are building an access gating mechanism. The function receives
+#           a complete user account dictionary and evaluates their privilege level.
+#
+# TASKS:
+# 1. Define a function named 'is_admin_account' that accepts a single parameter
+#    named 'user_dict'.
+# 2. Inside the function, extract the value inside the key "role".
+# 3. Write a condition: If the role equals the string "Administrator",
+#    return the boolean True.
+# 4. Otherwise, return the boolean False.
+# ==============================================================================
+
+# [WRITE YOUR TEST 5 FUNCTION HERE]
+
+
+
+
+# Pipeline Execution:
+account_alpha = {"username": "vlad_ops", "role": "Administrator", "dept": "IT"}
+account_beta = {"username": "jane_clerk", "role": "Guest", "dept": "Finance"}
+
+verdict_alpha = is_admin_account(account_alpha)
+verdict_beta = is_admin_account(account_beta)
+
+print("-----TEST 5-----")
+print(f"Account Alpha Admin Status: {verdict_alpha}")
+print(f"Account Beta Admin Status: {verdict_beta}\n\n")
+
 
