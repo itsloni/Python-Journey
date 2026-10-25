@@ -194,7 +194,8 @@ firewall_inventory.insert(0, "DMZ_Gateway_Premium")
 firewall_inventory.append("Core_FW_03")
 firewall_inventory.remove("Legacy_FW_Alpha")
 
-print(firewall_inventory)
+print("-----LIST CHALLENGE 1-----")
+print(f"{firewall_inventory}\n\n")
 
 
 #List Practice 2
