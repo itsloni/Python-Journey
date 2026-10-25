@@ -113,8 +113,10 @@ for lists in session_data:
             unauthorized_guests.append(lists[0])
 if unauthorized_guests:
     isolation_required = True
+
+    print("-----CHALLENGE 7-----")
     print(f"Unauthorized Guests: {unauthorized_guests}")
-    print(f"System Isolation Required: {isolation_required}")
+    print(f"System Isolation Required: {isolation_required}\n\n")
 # # Write your nested list solution below!
 
 # Test 7.2
