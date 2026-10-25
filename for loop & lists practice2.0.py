@@ -224,8 +224,9 @@ raw_logs = ["User_Login", "Domain_Controller_Alpha", "File_Access"]
 sanitized_logs = raw_logs.copy()
 sanitized_logs[1] = "HIDDEN_ASSET"
 
+print("-----LIST CHALLENGE 4-----")
 print(f"Original Raw Logs: {raw_logs}")
-print(f"Sanitized Audit Logs: {sanitized_logs}")
+print(f"Sanitized Audit Logs: {sanitized_logs}\n\n")
 
 
 # The Memory Buffer Flush five
