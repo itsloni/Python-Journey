@@ -106,14 +106,15 @@ def filter_malicious_logs(raw_traffic_logs):
     for logs in raw_traffic_logs:
         all_logs = logs.lower()
         if all_logs == "failed":
-            
+            failures.append(all_logs)
+    return failures
 
 # Pipeline Execution:
 raw_traffic_logs = ["success", "failed", "success", "failed", "failed", "success"]
 isolated_threats = filter_malicious_logs(raw_traffic_logs)
 
 print("-----TEST 4-----")
-print(f"Isolated Threats List: {isolated_threats}")
+print(f"Isolated Threats List: {isolated_threats}\n\n")
 
 
 
