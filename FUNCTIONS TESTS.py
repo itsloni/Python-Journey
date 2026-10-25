@@ -39,13 +39,15 @@ print(f"Sanitized IP Output: '{sanitized_result}'\n\n")
 
 # [WRITE YOUR TEST 2 FUNCTION HERE]
 
-
-
+def calculate_exploit_score(base_severity, multiplier):
+    calculation = base_severity * multiplier
+    return calculation
 
 # Pipeline Execution:
 score_1 = calculate_exploit_score(8, 3)
 score_2 = calculate_exploit_score(5, 4)
 
+print("-----TEST 2-----")
 print(f"Calculated Score 1: {score_1}")
-print(f"Calculated Score 2: {score_2}")
+print(f"Calculated Score 2: {score_2}\n\n")
 
