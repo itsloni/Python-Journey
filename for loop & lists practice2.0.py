@@ -215,8 +215,9 @@ feed_beta = ["Exploit_ZeroDay", "Bad_Domain", "Exploit_ZeroDay"]
 all_indicators = feed_alpha + feed_beta
 zeroday_count = all_indicators.count("Exploit_ZeroDay")
 
+print("-----LIST CHALLENGE 3-----")
 print(f"Combined Indicators: {all_indicators}")
-print(f"Total ZeroDay Overlaps: {zeroday_count}")
+print(f"Total ZeroDay Overlaps: {zeroday_count}\n\n")
 
 # The Sanitized Audit Log 4
 raw_logs = ["User_Login", "Domain_Controller_Alpha", "File_Access"]
