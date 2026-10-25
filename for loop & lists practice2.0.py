@@ -85,10 +85,12 @@ for ip in network_traffic:
         suspicious_ips.append(ip)
         alert_triggered = True
 if suspicious_ips:
+    print("-----CHALLENGE 6-----")
     print(f"suspicious ip's are: {suspicious_ips}")
 
+print("-----CHALLENGE 6-----")
 print(f"Alert Status: {alert_triggered}")
-print(f"Suspicious IPs Found: {suspicious_ips}")
+print(f"Suspicious IPs Found: {suspicious_ips}\n\n")
 
 #TEST 7
 # A list containing inner lists: [Username, IP Address, Security Level]
