@@ -71,9 +71,9 @@ for attempts in login_logs:
 if failed_count >= 3:
     account_locked = True
 
-
+print("-----CHALLENGE 5-----")
 print(f"Total Failed Attempts: {failed_count}")
-print(f"Account Locked Status: {account_locked}")
+print(f"Account Locked Status: {account_locked}\n\n")
 
 #TEST six
 network_traffic = ["10.0.0.52", "192.168.1.100", "10.0.0.11", "45.33.22.11", "10.0.1.5"]
