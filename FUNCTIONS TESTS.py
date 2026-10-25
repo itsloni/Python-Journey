@@ -136,10 +136,13 @@ print(f"Isolated Threats List: {isolated_threats}\n\n")
 
 def is_admin_account(user_dict):
     safe_user_dict = user_dict["role"].lower()
-    if safe_user_dict["role"] == "administrator":
-        return True
+    if safe_user_dict == "administrator":
+        scan = f"{user_dict["username"]} is an Administrator"
+        return scan, True
+
     else:
-        return False
+        scan = f"{user_dict['username']} is not Administrator but {user_dict["role"]}"
+        return scan, False
 
 
 # Pipeline Execution:
