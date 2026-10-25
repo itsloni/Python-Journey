@@ -22,7 +22,8 @@ for user in active_users:
         banned.append(user)
         alert_triggered = True
 
-print(f"Security Alert Triggered: {alert_triggered} by banned user: {banned}")
+print("-----CHALLENGE 2-----")
+print(f"Security Alert Triggered: {alert_triggered} by banned user: {banned}\n\n")
 
 #TEST 3
 line_length = 8
@@ -30,6 +31,7 @@ divider_line = ""
 
 for line in range(line_length):
     divider_line += "-"
+
 
 print("SECURITY RE-AUDIT ALERT")
 print(divider_line)
