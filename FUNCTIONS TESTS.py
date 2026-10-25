@@ -136,7 +136,8 @@ print(f"Isolated Threats List: {isolated_threats}\n\n")
 
 def is_admin_account(user_dict):
     safe_user_dict = user_dict["role"].lower()
-    
+    if safe_user_dict["role"] == "administrator":
+        return True
     else:
         return False
 
