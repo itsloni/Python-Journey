@@ -203,8 +203,9 @@ event_timeline = ["User_Login", "File_Downloaded", "Malware_Executed", "System_C
 incident_index = event_timeline.index("Malware_Executed")
 pre_incident_timeline = event_timeline[:incident_index + 1]
 
+print("-----LIST CHALLENGE 2-----")
 print(f"Incident occurred at index: {incident_index}")
-print(f"Isolated Timeline: {pre_incident_timeline}")
+print(f"Isolated Timeline: {pre_incident_timeline}\n\n")
 
 ##List Practice 3
 #
