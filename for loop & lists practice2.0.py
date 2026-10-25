@@ -169,8 +169,10 @@ for lists in vulnerability_report:
 
 if len(emergency_servers) >= 2:
     system_wide_shutdown = True
+
+    print("-----CHALLENGE 7.3-----")
     print(f"Emergency Servers: {emergency_servers}")
-    print(f"System-Wide Shutdown Triggered: {system_wide_shutdown}")
+    print(f"System-Wide Shutdown Triggered: {system_wide_shutdown}\n\n")
 
 # TEST 8
 detected_attacks = ["Malware_Injection", "SQL_Injection", "DDoS_Attack"]
