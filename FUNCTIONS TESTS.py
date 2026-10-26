@@ -196,7 +196,7 @@ threat_roster = process_security_event("unknown_guest", "failed", threat_roster)
 
 print("-----TEST 6-----")
 print(f"Final Global Threat Roster: {threat_roster}")
-print(f"Total High-Risk Events Documented: {len(threat_roster)}")
+print(f"Total High-Risk Events Documented: {len(threat_roster)}\n\n")
 
 
 # ==============================================================================
