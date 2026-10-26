@@ -215,9 +215,12 @@ print(f"Total High-Risk Events Documented: {len(threat_roster)}")
 # ==============================================================================
 
 # [ARCHITECT YOUR FUNCTION SEVEN BELOW]
-def generate_acl_rule():
-
-
+def generate_acl_rule(ip_address, port_num):
+    if port_num == 80 or port_num == 443:
+        action = "ALLOW"
+        router_rule = f"RULE SET: {action} traffic from {ip_address} on port {port_num}"
+        return router_rule
+   
 
 # Pipeline Execution Values:
 rule_alpha = generate_acl_rule("192.168.1.25", 443)
@@ -227,4 +230,4 @@ rule_gamma = generate_acl_rule("10.0.0.55", 80)
 print("-----TEST 7-----")
 print(rule_alpha)
 print(rule_beta)
-print(rule_gamma)
+print(f"{rule_gamma}\n\n")
