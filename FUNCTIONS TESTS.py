@@ -215,7 +215,7 @@ print(f"Total High-Risk Events Documented: {len(threat_roster)}")
 # ==============================================================================
 
 # [ARCHITECT YOUR FUNCTION SEVEN BELOW]
-
+def generate_acl_rule():
 
 
 
