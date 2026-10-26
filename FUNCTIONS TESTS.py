@@ -255,7 +255,8 @@ print(f"{rule_gamma}\n\n")
 # ==============================================================================
 
 # [ARCHITECT YOUR FUNCTION EIGHT BELOW]
-
+def scan_network_traffic(list_oof_packets):
+    
 
 
 
