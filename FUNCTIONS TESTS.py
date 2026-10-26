@@ -235,3 +235,40 @@ print("-----TEST 7-----")
 print(rule_alpha)
 print(rule_beta)
 print(f"{rule_gamma}\n\n")
+
+
+# ==============================================================================
+# FUNCTION TEST 8: THE LIVE BULK INTEL SCANNER
+# ==============================================================================
+# SCENARIO: You are writing a core function for a threat assessment pipeline.
+#           The function receives a list of raw network packet dictionaries and
+#           must dynamically extract indicators.
+#
+# GOAL: Architect a function named 'scan_network_traffic' that accepts a single
+#       parameter representing a list of packets.
+#       - Inside the function, evaluate each packet dictionary.
+#       - If a packet has a key "type" equal to "Malicious", look up its "risk"
+#         integer score.
+#       - If that "risk" score is greater than 7, extract the "source" IP string
+#         and collect it into an internal evidence list.
+#       - Your function must return the final evidence list of flagged IPs.
+# ==============================================================================
+
+# [ARCHITECT YOUR FUNCTION EIGHT BELOW]
+
+
+
+
+# Pipeline Execution Values:
+traffic_batch = [
+    {"source": "192.168.1.50", "type": "Safe", "risk": 2},
+    {"source": "45.33.22.11", "type": "Malicious", "risk": 9},
+    {"source": "10.0.0.12", "type": "Safe", "risk": 1},
+    {"source": "185.220.101.5", "type": "Malicious", "risk": 8},
+    {"source": "192.168.1.200", "type": "Malicious", "risk": 5}
+]
+
+flagged_threats = scan_network_traffic(traffic_batch)
+
+print("-----TEST 8-----")
+print(f"Flagged Threat IPs: {flagged_threats}")
