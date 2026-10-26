@@ -198,3 +198,33 @@ print("-----TEST 6-----")
 print(f"Final Global Threat Roster: {threat_roster}")
 print(f"Total High-Risk Events Documented: {len(threat_roster)}")
 
+
+# ==============================================================================
+# FUNCTION TEST 7: THE FIREWALL ACL RULE GENERATOR
+# ==============================================================================
+# SCENARIO: You are building an automated Access Control List (ACL) system.
+#           Your tool takes raw networking parameters and wraps them into a
+#           standard terminal command string that can be pushed to a firewall router.
+#
+# GOAL: Architect a function named 'generate_acl_rule' that takes an IP and a
+#       port, formats them into a clean rule string, and returns it.
+#       - If the port is exactly 80 or 443, the action is "ALLOW".
+#       - For any other port, the action is "DENY".
+#       - The function must return an f-string formatted precisely as:
+#         "RULE SET: {action} traffic from {ip_address} on port {port_num}"
+# ==============================================================================
+
+# [ARCHITECT YOUR FUNCTION SEVEN BELOW]
+
+
+
+
+# Pipeline Execution Values:
+rule_alpha = generate_acl_rule("192.168.1.25", 443)
+rule_beta = generate_acl_rule("45.33.22.11", 22)
+rule_gamma = generate_acl_rule("10.0.0.55", 80)
+
+print("-----TEST 7-----")
+print(rule_alpha)
+print(rule_beta)
+print(rule_gamma)
