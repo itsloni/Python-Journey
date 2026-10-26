@@ -261,7 +261,8 @@ def scan_network_traffic(list_of_packets):
         packets_type_case = packets["type"].lower()
         if packets_type_case == "malicious":
             if packets["risk"] > 7:
-                
+                evidence_list.append(packets["source"])
+    return evidence_list
 
 
 
