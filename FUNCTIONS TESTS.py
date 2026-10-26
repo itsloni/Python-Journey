@@ -222,9 +222,9 @@ def generate_acl_rule(ip_address, port_num):
         return router_rule
 
     else:
-    action = "DENY"
-    router_rule = f"RULE SET: {action} traffic from {ip_address} on port {port_num}"
-    return router_rule
+        action = "DENY"
+        router_rule = f"RULE SET: {action} traffic from {ip_address} on port {port_num}"
+        return router_rule
 
 # Pipeline Execution Values:
 rule_alpha = generate_acl_rule("192.168.1.25", 443)
