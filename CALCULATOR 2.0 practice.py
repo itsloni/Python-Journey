@@ -10,7 +10,10 @@ while True:
             split_value_addition = int(split_value[location_of_addition - 1]) + int(split_value[location_of_addition + 1])
             split_value[location_of_addition - 1:location_of_addition + 1] = [split_value_addition]
 
-        
+        while "-" in split_value:
+            location_of_subtraction = split_value.index("-")
+            split_value_subtraction = int(split_value[location_of_subtraction - 1]) - int(split_value[location_of_subtraction + 1])
+            split_value[location_of_subtraction - 1:location_of_subtraction + 1] = [split_value_subtraction]
 
         return split_value[0]
 
