@@ -4,9 +4,9 @@ while True:
 
         split_value = value.split(" ")
         adder = 0
-        
-        for num in split_value:
-            if num.isdigit():
+
+        for sign in split_value:
+            if sign[0::1] == "+"::
                 # print(num)
                 num = int(num)
                 adder += num
