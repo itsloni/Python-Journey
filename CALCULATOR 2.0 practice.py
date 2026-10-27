@@ -1,8 +1,10 @@
 while True:
 
     def calculator(value):
-        split_value = value.split("+")
+
+        split_value = value.split(" ")
         adder = 0
+        
         for num in split_value:
             if num.isdigit():
                 # print(num)
