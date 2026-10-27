@@ -1,6 +1,6 @@
 while True:
 
-    def addition(value):
+    def calculator(value):
         split_value = value.split("+")
         adder = 0
         for num in split_value:
@@ -13,5 +13,6 @@ while True:
                 return error
         return adder
 
-    user_input = input("what do you want to add?: ")
-    print(addition(user_input))
+    user_input = input("what do you want to calculate?: ")
+    print(calculator(user_input))
+
