@@ -21,6 +21,8 @@ while True:
             split_value[location_of_multiplication - 1:location_of_multiplication + 1] = [split_value_multiplication]
 
         while "of" in split_value:
+            location_for_of = split_value.index("of")
+            split_value_for_of = int(split_value[location_for_of - 1]) * int(split_value[location_for_of + 1])
             
 
 
