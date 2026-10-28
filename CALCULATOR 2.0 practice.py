@@ -26,7 +26,9 @@ while True:
             split_value[location_for_of - 1:location_for_of + 1] = [split_value_for_of]
 
         while "(" and ")" in split_value:
-            location_of_first_bracket = 
+            location_of_first_bracket = split_value.index("(")
+            location_of_second_bracket = split_value.index(")")
+            split_value_in_bracket =  
 
 
 
