@@ -40,13 +40,6 @@ while True:
             split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [split_value_subtraction]
 
 
-
-
-
-
-
-
-
         return split_value[0]
 
     user_input = input("what do you want to calculate?: ")
