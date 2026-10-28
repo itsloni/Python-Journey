@@ -2,7 +2,6 @@ while True:
 
     def calculator(value):
         split_value = value.split(" ")
-        print(split_value)
 
 
         while "(" and ")" in split_value:
@@ -30,7 +29,6 @@ while True:
 
         while "+" in split_value:
             location_of_addition = split_value.index("+")
-            print(location_of_addition)
             split_value_addition = int(split_value[location_of_addition - 1]) + int(split_value[location_of_addition + 1])
             split_value[location_of_addition - 1:location_of_addition + 2] = [split_value_addition]
 
@@ -44,9 +42,3 @@ while True:
 
     user_input = input("what do you want to calculate?: ")
     print(calculator(user_input))
-
-
-
-# cat = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# cat[0:8] = [10]
-# print(cat)
