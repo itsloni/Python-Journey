@@ -25,6 +25,9 @@ while True:
             split_value_for_of = int(split_value[location_for_of - 1]) * int(split_value[location_for_of + 1])
             split_value[location_for_of - 1:location_for_of + 1] = [split_value_for_of]
 
+        while "(" and ")" in split_value:
+            location_of_first_bracket = 
+
 
 
         return split_value[0]
