@@ -14,27 +14,27 @@ while True:
 
         while "of" in split_value:
             location_for_of = split_value.index("of")
-            split_value_for_of = int(split_value[location_for_of - 1]) * int(split_value[location_for_of + 1])
+            split_value_for_of = float(split_value[location_for_of - 1]) * float(split_value[location_for_of + 1])
             split_value[location_for_of - 1:location_for_of + 2] = [split_value_for_of]
 
         while "/" in split_value:
             location_of_division = split_value.index("/")
-            split_value_division = int(split_value[location_of_division - 1]) / int(split_value[location_of_division + 1])
+            split_value_division = float(split_value[location_of_division - 1]) / float(split_value[location_of_division + 1])
             split_value[location_of_division - 1:location_of_division + 2] = [split_value_division]
 
         while "*" in split_value:
             location_of_multiplication = split_value.index("*")
-            split_value_multiplication = int(split_value[location_of_multiplication - 1]) * int(split_value[location_of_multiplication + 1])
+            split_value_multiplication = float(split_value[location_of_multiplication - 1]) * float(split_value[location_of_multiplication + 1])
             split_value[location_of_multiplication - 1:location_of_multiplication + 2] = [split_value_multiplication]
 
         while "+" in split_value:
             location_of_addition = split_value.index("+")
-            split_value_addition = int(split_value[location_of_addition - 1]) + int(split_value[location_of_addition + 1])
+            split_value_addition = float(split_value[location_of_addition - 1]) + float(split_value[location_of_addition + 1])
             split_value[location_of_addition - 1:location_of_addition + 2] = [split_value_addition]
 
         while "-" in split_value:
             location_of_subtraction = split_value.index("-")
-            split_value_subtraction = int(split_value[location_of_subtraction - 1]) - int(split_value[location_of_subtraction + 1])
+            split_value_subtraction = float(split_value[location_of_subtraction - 1]) - float(split_value[location_of_subtraction + 1])
             split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [split_value_subtraction]
 
 
