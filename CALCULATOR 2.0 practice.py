@@ -21,7 +21,7 @@ while True:
         while "/" in split_value:
             location_of_division = split_value.index("/")
             split_value_division = int(split_value[location_of_division - 1]) / int(split_value[location_of_division + 1])
-            
+            split_value[location_of_division - 1:location_of_division + 2] = [split_value_division]
 
 
         while "+" in split_value:
