@@ -35,7 +35,7 @@ while True:
 
 
 
-        return split_value
+        return type(split_value[0])
 
     user_input = input("what do you want to calculate?: ")
     print(calculator(user_input))
