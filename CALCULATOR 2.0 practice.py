@@ -9,6 +9,7 @@ while True:
             location_of_second_bracket = split_value.index(")")
             split_value_in_bracket = split_value[location_of_first_bracket + 1:location_of_second_bracket]
             join_value_in_bracket = " ".join(split_value_in_bracket)
+            print(join_value_in_bracket)
             calculating_joined_value_in_bracket = calculator(join_value_in_bracket)
             split_value[location_of_first_bracket:location_of_second_bracket + 1] = [calculating_joined_value_in_bracket]
 
@@ -55,7 +56,7 @@ while True:
                 split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [split_value_subtraction]
 
 
-            return split_value[0]
+        return split_value[0]
 
     user_input = input("what do you want to calculate?: ")
     print(calculator(user_input))
