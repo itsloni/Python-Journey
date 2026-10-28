@@ -23,7 +23,7 @@ while True:
         while "of" in split_value:
             location_for_of = split_value.index("of")
             split_value_for_of = int(split_value[location_for_of - 1]) * int(split_value[location_for_of + 1])
-            split_value[location_for_of - 1:location_for_of + 1] = [split_value_for_of]
+            split_value[location_for_of - 1:location_for_of + 2] = [split_value_for_of]
 
         while "(" and ")" in split_value:
             location_of_first_bracket = split_value.index("(")
