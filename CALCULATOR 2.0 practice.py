@@ -18,6 +18,12 @@ while True:
             split_value_for_of = int(split_value[location_for_of - 1]) * int(split_value[location_for_of + 1])
             split_value[location_for_of - 1:location_for_of + 2] = [split_value_for_of]
 
+        while "/" in split_value:
+            location_of_division = split_value.index("/")
+            split_value_division = int(split_value[location_of_division - 1]) / int(split_value[location_of_division + 1])
+            
+
+
         while "+" in split_value:
             location_of_addition = split_value.index("+")
             print(location_of_addition)
