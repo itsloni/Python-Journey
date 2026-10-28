@@ -27,18 +27,29 @@ while True:
             split_value_multiplication = float(split_value[location_of_multiplication - 1]) * float(split_value[location_of_multiplication + 1])
             split_value[location_of_multiplication - 1:location_of_multiplication + 2] = [split_value_multiplication]
 
-        while "+" in split_value:
-            location_of_addition = split_value.index("+")
-            split_value_addition = float(split_value[location_of_addition - 1]) + float(split_value[location_of_addition + 1])
-            split_value[location_of_addition - 1:location_of_addition + 2] = [split_value_addition]
 
-        while "-" in split_value:
-            location_of_subtraction = split_value.index("-")
-            split_value_subtraction = float(split_value[location_of_subtraction - 1]) - float(split_value[location_of_subtraction + 1])
-            split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [split_value_subtraction]
+        while "+" in split_value or "-" in split_value:
+            # split_value_addition = float( )
+            # location_of_addition = float( )
+            # split_value_subtraction = float( )
+            # location_of_subtraction = float( )
+            if "+" in split_value and "-" in split_value:
+                if split_value.inde
+
+            if "+" in split_value:
+                location_of_addition = split_value.index("+")
+                split_value_addition = float(split_value[location_of_addition - 1]) + float(split_value[location_of_addition + 1])
+                split_value[location_of_addition - 1:location_of_addition + 2] = [split_value_addition]
+        # split_value[location_of_addition - 1:location_of_addition + 2] = [split_value_addition]
+
+            if "-" in split_value:
+                location_of_subtraction = split_value.index("-")
+                split_value_subtraction = float(split_value[location_of_subtraction - 1]) - float(split_value[location_of_subtraction + 1])
+
+                split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [split_value_subtraction]
 
 
-        return split_value[0]
+            return split_value[0]
 
     user_input = input("what do you want to calculate?: ")
     print(calculator(user_input))
