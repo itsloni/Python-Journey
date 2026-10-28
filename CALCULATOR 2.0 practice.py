@@ -5,13 +5,15 @@ while True:
 
 
         while "(" and ")" in split_value:
-            location_of_first_bracket = split_value.index("(")
-            location_of_second_bracket = split_value.index(")")
-            split_value_in_bracket = split_value[location_of_first_bracket + 1:location_of_second_bracket]
-            join_value_in_bracket = " ".join(split_value_in_bracket)
-            print(join_value_in_bracket)
-            calculating_joined_value_in_bracket = calculator(join_value_in_bracket)
-            split_value[location_of_first_bracket:location_of_second_bracket + 1] = [calculating_joined_value_in_bracket]
+            location_of_open_bracket = split_value.index("(")
+            location_of_close_bracket = split_value.index(")")
+            if "(" in split_value and ")" in split_value:
+                if location_of_open_bracket > location_of_close_bracket:
+                    split_value_in_bracket = split_value[location_of_open_bracket + 1:location_of_close_bracket]
+                    join_value_in_bracket = " ".join(split_value_in_bracket)
+                    print(join_value_in_bracket)
+                    calculating_joined_value_in_bracket = calculator(join_value_in_bracket)
+                    split_value[location_of_open_bracket:location_of_close_bracket + 1] = [calculating_joined_value_in_bracket]
 
         while "of" in split_value:
             location_for_of = split_value.index("of")
