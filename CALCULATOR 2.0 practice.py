@@ -13,7 +13,7 @@ while True:
         while "-" in split_value:
             location_of_subtraction = split_value.index("-")
             split_value_subtraction = int(split_value[location_of_subtraction - 1]) - int(split_value[location_of_subtraction + 1])
-            split_value[location_of_subtraction - 1:location_of_subtraction + 1] = [split_value_subtraction]
+            split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [split_value_subtraction]
 
         while "*" in split_value:
             location_of_multiplication = split_value.index("*")
