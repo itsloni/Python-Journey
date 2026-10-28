@@ -23,6 +23,11 @@ while True:
             split_value_division = int(split_value[location_of_division - 1]) / int(split_value[location_of_division + 1])
             split_value[location_of_division - 1:location_of_division + 2] = [split_value_division]
 
+        while "*" in split_value:
+            location_of_multiplication = split_value.index("*")
+            split_value_multiplication = int(split_value[location_of_multiplication - 1]) * int(split_value[location_of_multiplication + 1])
+            split_value[location_of_multiplication - 1:location_of_multiplication + 2] = [split_value_multiplication]
+
         while "+" in split_value:
             location_of_addition = split_value.index("+")
             print(location_of_addition)
@@ -34,10 +39,7 @@ while True:
             split_value_subtraction = int(split_value[location_of_subtraction - 1]) - int(split_value[location_of_subtraction + 1])
             split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [split_value_subtraction]
 
-        while "*" in split_value:
-            location_of_multiplication = split_value.index("*")
-            split_value_multiplication = int(split_value[location_of_multiplication - 1]) * int(split_value[location_of_multiplication + 1])
-            split_value[location_of_multiplication - 1:location_of_multiplication + 2] = [split_value_multiplication]
+
 
 
 
