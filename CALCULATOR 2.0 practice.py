@@ -17,7 +17,10 @@ while True:
 
         while "*" in split_value:
             location_of_multiplication = split_value.index("*")
-            
+            split_value_multiplication = int(split_value[location_of_multiplication - 1]) * int(split_value[location_of_multiplication + 1])
+            split_value[location_of_multiplication - 1:location_of_multiplication + 1] = [split_value_multiplication]
+
+        
 
 
 
