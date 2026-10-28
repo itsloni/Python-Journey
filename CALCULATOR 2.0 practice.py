@@ -28,7 +28,9 @@ while True:
         while "(" and ")" in split_value:
             location_of_first_bracket = split_value.index("(")
             location_of_second_bracket = split_value.index(")")
-            split_value_in_bracket =  
+            split_value_in_bracket = split_value[location_of_first_bracket + 1:location_of_second_bracket]
+            join_value_in_bracket = " ".join(split_value_in_bracket)
+            calculating_joined_value_in_bracket = calculator(join_value_in_bracket)
 
 
 
