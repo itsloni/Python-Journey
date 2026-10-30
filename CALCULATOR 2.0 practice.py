@@ -11,13 +11,12 @@ while True:
             while location_of_closest_open_bracket_to_first_close_bracket != "(":
                 location_of_closest_open_bracket_to_first_close_bracket -= 1
 
-           
-                    split_value_in_bracket = split_value[location_of_last_open_bracket + 1:location_of_first_close_bracket]
-                    print(split_value_in_bracket)
-                    join_value_in_bracket = " ".join(split_value_in_bracket)
-                    print(join_value_in_bracket)
-                    calculating_joined_value_in_bracket = calculator(join_value_in_bracket)
-                    split_value[location_of_last_open_bracket:location_of_first_close_bracket + 1] = [calculating_joined_value_in_bracket]
+            split_value_in_bracket = split_value[location_of_closest_open_bracket_to_first_close_bracket + 1:location_of_first_close_bracket]
+            print(split_value_in_bracket)
+            join_value_in_bracket = " ".join(split_value_in_bracket)
+            print(join_value_in_bracket)
+            calculating_joined_value_in_bracket = calculator(join_value_in_bracket)
+            split_value[location_of_closest_open_bracket_to_first_close_bracket:location_of_first_close_bracket + 1] = [calculating_joined_value_in_bracket]
 
         while "of" in split_value:
             location_for_of = split_value.index("of")
