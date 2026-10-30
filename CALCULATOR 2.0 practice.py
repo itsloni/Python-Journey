@@ -34,10 +34,6 @@ while True:
 
 
         while "+" in split_value or "-" in split_value:
-            # split_value_addition = float( )
-            # location_of_addition = float( )
-            # split_value_subtraction = float( )
-            # location_of_subtraction = float( )
             if "+" in split_value and "-" in split_value:
                 if split_value.index("+") < split_value.index("-"):
                     location_of_addition = split_value.index("+")
