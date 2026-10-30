@@ -3,8 +3,7 @@ while True:
     def calculator(value):
         split_value = value.split(" ")
 
-        while "(" and ")" in split_value:
-            # location_of_first_open_bracket = split_value.index("(")
+        while "(" in split_value and ")" in split_value:
             location_of_first_close_bracket = split_value.index(")")
 
             location_of_closest_open_bracket_to_first_close_bracket = location_of_first_close_bracket
