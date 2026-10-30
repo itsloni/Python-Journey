@@ -11,9 +11,7 @@ while True:
                 location_of_closest_open_bracket_to_first_close_bracket -= 1
 
             split_value_in_bracket = split_value[location_of_closest_open_bracket_to_first_close_bracket + 1:location_of_first_close_bracket]
-            print(split_value_in_bracket)
             join_value_in_bracket = " ".join(split_value_in_bracket)
-            print(join_value_in_bracket)
             calculating_joined_value_in_bracket = calculator(join_value_in_bracket)
             split_value[location_of_closest_open_bracket_to_first_close_bracket:location_of_first_close_bracket + 1] = [calculating_joined_value_in_bracket]
 
@@ -25,7 +23,7 @@ while True:
         while "/" in split_value:
             location_of_division = split_value.index("/")
             split_value_division = float(split_value[location_of_division - 1]) / float(split_value[location_of_division + 1])
-            split_value[location_of_division - 1:location_of_division + 2] = [split_value_division]
+            split_value[location_of_division - 1:location_of_division + 2] = [str(split_value_division)]
 
         while "*" in split_value:
             location_of_multiplication = split_value.index("*")
