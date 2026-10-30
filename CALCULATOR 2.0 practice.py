@@ -7,7 +7,7 @@ while True:
             location_of_first_close_bracket = split_value.index(")")
 
             location_of_closest_open_bracket_to_first_close_bracket = location_of_first_close_bracket
-            while location_of_closest_open_bracket_to_first_close_bracket != "(":
+            while split_value[location_of_closest_open_bracket_to_first_close_bracket] != "(":
                 location_of_closest_open_bracket_to_first_close_bracket -= 1
 
             split_value_in_bracket = split_value[location_of_closest_open_bracket_to_first_close_bracket + 1:location_of_first_close_bracket]
