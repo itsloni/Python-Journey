@@ -20,7 +20,7 @@ while True:
         while "of" in split_value:
             location_for_of = split_value.index("of")
             split_value_for_of = float(split_value[location_for_of - 1]) * float(split_value[location_for_of + 1])
-            split_value[location_for_of - 1:location_for_of + 2] = str([split_value_for_of])
+            split_value[location_for_of - 1:location_for_of + 2] = [str(split_value_for_of)]
 
         while "/" in split_value:
             location_of_division = split_value.index("/")
