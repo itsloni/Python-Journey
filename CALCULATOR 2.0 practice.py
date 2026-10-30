@@ -4,9 +4,10 @@ while True:
         split_value = value.split(" ")
 
         while "(" and ")" in split_value:
-            location_of_first_open_bracket = split_value.index("(")
+            # location_of_first_open_bracket = split_value.index("(")
             location_of_first_close_bracket = split_value.index(")")
 
+            location_of_closest_open_bracket_to_first_close_bracket = location_of_first_close_bracket
             if location_of_first_close_bracket > location_of_first_open_bracket:
                 location_of_last_open_bracket = split_value.rindex("(")
                 if location_of_last_open_bracket < location_of_first_close_bracket:
