@@ -277,6 +277,5 @@ traffic_batch = [
 ]
 
 flagged_threats = scan_network_traffic(traffic_batch)
-
 print("-----TEST 8-----")
 print(f"Flagged Threat IPs: {flagged_threats}")
