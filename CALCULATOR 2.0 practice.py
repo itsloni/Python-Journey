@@ -38,21 +38,21 @@ while True:
                 if split_value.index("+") < split_value.index("-"):
                     location_of_addition = split_value.index("+")
                     split_value_addition = float(split_value[location_of_addition - 1]) + float(split_value[location_of_addition + 1])
-                    split_value[location_of_addition - 1:location_of_addition + 2] = str([split_value_addition])
+                    split_value[location_of_addition - 1:location_of_addition + 2] = [str(split_value_addition)]
                 else:
                     location_of_subtraction = split_value.index("-")
                     split_value_subtraction = float(split_value[location_of_subtraction - 1]) - float(split_value[location_of_subtraction + 1])
-                    split_value[location_of_subtraction - 1:location_of_subtraction + 2] = str([split_value_subtraction])
+                    split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [str(split_value_subtraction)]
 
             elif "+" in split_value:
                 location_of_addition = split_value.index("+")
                 split_value_addition = float(split_value[location_of_addition - 1]) + float(split_value[location_of_addition + 1])
-                split_value[location_of_addition - 1:location_of_addition + 2] = str([split_value_addition])
+                split_value[location_of_addition - 1:location_of_addition + 2] = [str(split_value_addition)]
 
             elif "-" in split_value:
                 location_of_subtraction = split_value.index("-")
                 split_value_subtraction = float(split_value[location_of_subtraction - 1]) - float(split_value[location_of_subtraction + 1])
-                split_value[location_of_subtraction - 1:location_of_subtraction + 2] = str([split_value_subtraction])
+                split_value[location_of_subtraction - 1:location_of_subtraction + 2] = [str(split_value_subtraction)]
 
         return split_value[0]
 
