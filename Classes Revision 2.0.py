@@ -64,7 +64,8 @@ class Firewall:
 
     def trigger_emergency_block(self):
         self.is_active = False
-        a
+        alert = f"CRITICAL: {self.device_name} ({self.ip_address}) HAS BEEN SHUT DOWN!"
+        return alert
 
 
 
