@@ -43,5 +43,8 @@ class Person:
     def talk(self):
         print(f"Hi {self.name} ")
 
-person1 = Person("Loni")
-person1.talk()
+loni = Person("Loni")
+loni.talk()
+bob = Person("Bob")
+bob.talk()
+
