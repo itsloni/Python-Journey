@@ -1,3 +1,6 @@
+from ipaddress import ip_address
+
+
 class Point:
     def move(self):
         print("move")
@@ -53,6 +56,9 @@ bob.talk()
 # ==============================================================================
 
 # [ARCHITECT YOUR FIREWALL CLASS HERE]
+class Firewall:
+    def __init__(self, ip_address, device_name):
+        
 
 
 
