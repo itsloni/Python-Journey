@@ -48,3 +48,27 @@ loni.talk()
 bob = Person("Bob")
 bob.talk()
 
+# ==============================================================================
+# CHALLENGE 1: THE NETWORK FIREWALL OBJECT BLUEPRINT
+# ==============================================================================
+
+# [ARCHITECT YOUR FIREWALL CLASS HERE]
+
+
+
+
+# Pipeline Execution:
+# Creating an instance (object) from your blueprint
+perimeter_fw = Firewall("192.168.1.1", "Edge_Firewall")
+
+print("----- CHALLENGE 1 INITIAL STATE -----")
+print(f"Device: {perimeter_fw.device_name}")
+print(f"IP: {perimeter_fw.ip_address}")
+print(f"Is Active Status: {perimeter_fw.is_active}\n")
+
+# Triggering the internal object logic engine
+alert_msg = perimeter_fw.trigger_emergency_block()
+
+print("----- CHALLENGE 1 POST-ALERT STATE -----")
+print(alert_msg)
+print(f"Final Is Active Status: {perimeter_fw.is_active}\n\n")
