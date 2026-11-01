@@ -6,16 +6,16 @@ class Point:
         print("draw")
 
 
-# point1 = Point()
-# point1.x = 10 #These are attributes. They belong to a class.
-# point1.y = 20
-# print(point1.x)
-#
-# point2 = Point()
-# point2.x = 1
-# print(point2.x)
-# point1.move()
-# point1.draw()
+point1 = Point()
+point1.x = 10 #These are attributes. They belong to a class.
+point1.y = 20
+print(point1.x)
+
+point2 = Point()
+point2.x = 1
+print(point2.x)
+point1.move()
+point1.draw()
 
 
 # CONSTRUCTORS
@@ -32,4 +32,10 @@ class Point:
         print("draw")
 
 point1 = Point(10, 20)
-print(point1.x)
+print(point1.x, point1.y)
+
+
+# Practice
+class Person:
+    def __init__(self, name):
+  
