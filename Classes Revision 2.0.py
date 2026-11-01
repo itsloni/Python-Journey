@@ -38,4 +38,10 @@ print(point1.x, point1.y)
 # Practice
 class Person:
     def __init__(self, name):
-  
+        self.name = name
+
+    def talk(self):
+        print(f"Hi {self.name} ")
+
+person1 = Person("Loni")
+person1.talk()
