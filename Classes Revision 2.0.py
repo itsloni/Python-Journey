@@ -124,7 +124,16 @@ class UserSession:
         if self.role == "Guest" and "Admin" in resource_name:
             warning = f"SECURITY WARNING: Guest user {self.user} targeted an Admin resource!"
             return warning
-        
+        else:
+            success = f"Access request recorded successfully."
+            return success
+
+
+session = UserSession("clerk_jane", "Guest")
+print(session.log_access_attempt("Guest"))
+print(session.log_access_attempt("Guest"))
+print(session.log_access_attempt("Admin_Database_Root"))
+print(session.log_access_attempt("Guest"))
 
 
 
