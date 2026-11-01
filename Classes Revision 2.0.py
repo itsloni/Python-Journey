@@ -67,9 +67,6 @@ class Firewall:
         alert = f"CRITICAL: {self.device_name} ({self.ip_address}) HAS BEEN SHUT DOWN!"
         return alert
 
-
-
-
 # Pipeline Execution:
 # Creating an instance (object) from your blueprint
 perimeter_fw = Firewall("192.168.1.1", "Edge_Firewall")
@@ -92,25 +89,27 @@ print(f"Final Is Active Status: {perimeter_fw.is_active}\n\n")
 # ==============================================================================
 # CHALLENGE 2: THE AUTOMATED USER PRIVILEGE AUDITOR
 # ==============================================================================
+# SCENARIO: Build a UserSession object blueprint that tracks an employee's
+#           access logs and privilege levels dynamically.
+#
+# GOAL:
+# 1. Architect a class named 'UserSession' with a constructor (__init__) that
+#    accepts: 'username' and 'role'.
+# 2. Automatically initialize a third tracking property named 'access_log'
+#    as a baseline empty mutable list ([]).
+# 3. Design a custom method inside named 'log_access_attempt' that accepts
+#    a single parameter named 'resource_name'.
+#    - Append 'resource_name' directly into the object's internal 'access_log' list.
+#    - If 'role' is exactly "Guest" AND the 'resource_name' contains the word
+#      "Admin", return: "SECURITY WARNING: Guest user {username} targeted an Admin resource!"
+#    - Otherwise, return: "Access request recorded successfully."
+#
+# PIPELINE REQUIREMENT:
+# You must write your own execution code below the class. Create an object for
+# "clerk_jane" with the role "Guest". Call the method multiple times (one target
+# should be "Admin_Database_Root"), and print your final logs to verify the output!
+# ==============================================================================
 
-# [ARCHITECT YOUR USERSESSION CLASS HERE]
+# [ARCHITECT YOUR CLASS AND YOUR ENTIRE EXECUTION PIPELINE COMPLETELY AUTONOMOUSLY BELOW]
 
 
-
-
-# Pipeline Execution:
-# Creating a user instance from your blueprint
-session_alpha = UserSession("clerk_jane", "Guest")
-
-# Executing safe access logs
-msg_1 = session_alpha.log_access_attempt("Finance_Public_Dashboard")
-msg_2 = session_alpha.log_access_attempt("HR_Holiday_Calendar")
-
-# Executing a suspicious access trigger
-msg_3 = session_alpha.log_access_attempt("Admin_Database_Root")
-
-print("----- CHALLENGE 2 RESULTS -----")
-print(f"Log 1 Status: {msg_1}")
-print(f"Log 2 Status: {msg_2}")
-print(f"Log 3 Status: {msg_3}")
-print(f"Complete Session History for {session_alpha.username}: {session_alpha.access_log}")
