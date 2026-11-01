@@ -62,7 +62,9 @@ class Firewall:
         self.device_name = device_name
         self.is_active = True
 
-    
+    def trigger_emergency_block(self):
+        self.is_active = False
+        a
 
 
 
