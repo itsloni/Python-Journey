@@ -122,7 +122,9 @@ class UserSession:
         # self.resource_name = resource_name
         self.access_log.append(resource_name)
         if self.role == "Guest" and "Admin" in resource_name:
-      
+            warning = f"SECURITY WARNING: Guest user {self.user} targeted an Admin resource!"
+            return warning
+        
 
 
 
