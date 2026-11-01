@@ -112,4 +112,14 @@ print(f"Final Is Active Status: {perimeter_fw.is_active}\n\n")
 
 # [ARCHITECT YOUR CLASS AND YOUR ENTIRE EXECUTION PIPELINE COMPLETELY AUTONOMOUSLY BELOW]
 
+class UserSession:
+    def __init__(self, user, role):
+        self.user = user
+        self.role = role
+        self.access_log = []
+
+
+
+
+
 
