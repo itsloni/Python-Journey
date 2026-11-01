@@ -18,3 +18,4 @@ point1.move()
 point1.draw()
 
 
+# CONSTRUCTORS
