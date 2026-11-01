@@ -118,7 +118,11 @@ class UserSession:
         self.role = role
         self.access_log = []
 
-
+    def log_access_attempt(self, resource_name):
+        # self.resource_name = resource_name
+        self.access_log.append(resource_name)
+        if self.role == "Guest" and "Admin" in resource_name:
+      
 
 
 
