@@ -85,3 +85,32 @@ alert_msg = perimeter_fw.trigger_emergency_block()
 print("----- CHALLENGE 1 POST-ALERT STATE -----")
 print(alert_msg)
 print(f"Final Is Active Status: {perimeter_fw.is_active}\n\n")
+
+
+
+#CHALLENGE 2
+# ==============================================================================
+# CHALLENGE 2: THE AUTOMATED USER PRIVILEGE AUDITOR
+# ==============================================================================
+
+# [ARCHITECT YOUR USERSESSION CLASS HERE]
+
+
+
+
+# Pipeline Execution:
+# Creating a user instance from your blueprint
+session_alpha = UserSession("clerk_jane", "Guest")
+
+# Executing safe access logs
+msg_1 = session_alpha.log_access_attempt("Finance_Public_Dashboard")
+msg_2 = session_alpha.log_access_attempt("HR_Holiday_Calendar")
+
+# Executing a suspicious access trigger
+msg_3 = session_alpha.log_access_attempt("Admin_Database_Root")
+
+print("----- CHALLENGE 2 RESULTS -----")
+print(f"Log 1 Status: {msg_1}")
+print(f"Log 2 Status: {msg_2}")
+print(f"Log 3 Status: {msg_3}")
+print(f"Complete Session History for {session_alpha.username}: {session_alpha.access_log}")
