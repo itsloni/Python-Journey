@@ -169,7 +169,8 @@ class IncidentTicket:
         self.severity_level = severity_level
         self.actions_taken = []
 
-   
+    def deploy_countermeasure(self, mitigation_step):
+        
 
 
 
