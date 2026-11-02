@@ -163,7 +163,9 @@ print(session.log_access_attempt("Guest"))
 
 # [ARCHITECT YOUR CLASS AND YOUR ENTIRE EXECUTION PIPELINE COMPLETELY AUTONOMOUSLY BELOW]
 
-
-
+class IncidentTicket:
+    def __init__(self, ticket_id, severity_level):
+        self.ticket_id = ticket_id
+        s
 
 
