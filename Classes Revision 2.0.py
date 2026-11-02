@@ -172,9 +172,9 @@ class IncidentTicket:
     def deploy_countermeasure(self, mitigation_step):
         self.actions_taken.append(mitigation_step)
         if self.severity_level == "CRITICAL" and "Isolate" in mitigation_step:  # remind me why does mitigation steps not have self?
-            alert = f"ALERT: Critical ticket {ticket_id} triggered an automated system Isolation!"
+            alert = f"ALERT: Critical ticket {self.ticket_id} triggered an automated system Isolation!"
             return alert
-        
+
 
 
 
