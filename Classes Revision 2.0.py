@@ -122,10 +122,10 @@ class UserSession:
         # self.resource_name = resource_name
         self.access_log.append(resource_name)
         if self.role == "Guest" and "Admin" in resource_name:
-            warning = f"SECURITY WARNING: Guest user {self.user} targeted an Admin resource!"
+            warning = f"SECURITY WARNING: Guest user {self.user} targeted an Admin resource!\n\n"
             return warning
         else:
-            success = f"Access request recorded successfully."
+            success = f"Access request recorded successfully.\n\n"
             return success
 
 
@@ -133,7 +133,7 @@ session = UserSession("clerk_jane", "Guest")
 print(session.log_access_attempt("Guest"))
 print(session.log_access_attempt("Guest"))
 print(session.log_access_attempt("Admin_Database_Root"))
-print(session.log_access_attempt("Guest"))
+print(session.log_access_attempt("Guest\n\n"))
 
 # ==============================================================================
 # CHALLENGE 3: THE AUTOMATED INCIDENT RESPONSE CONTAINER
@@ -166,22 +166,24 @@ print(session.log_access_attempt("Guest"))
 class IncidentTicket:
     def __init__(self, ticket_id, severity_level):
         self.ticket_id = ticket_id
-        self.severity_level = severity_level
+        self.severity_level = severity_level.lower()
         self.actions_taken = []
 
     def deploy_countermeasure(self, mitigation_step):
         self.actions_taken.append(mitigation_step)
-        if self.severity_level == "CRITICAL" and "Isolate" in mitigation_step:  # remind me why does mitigation steps not have self?
+        if self.severity_level == "critical" and "Isolate" in mitigation_step:  # remind me why does mitigation steps not have self?
             alert = f"ALERT: Critical ticket {self.ticket_id} triggered an automated system Isolation!"
             return alert
         else:
             normal = f"Countermeasure logged: {mitigation_step}."
             return normal
 incident = IncidentTicket("INC_904", "Critical")
+
 print(incident.deploy_countermeasure("Allowed"))
 print(incident.deploy_countermeasure("Allowed"))
 print(incident.deploy_countermeasure("Isolate"))
 print(incident.deploy_countermeasure("Allowed"))
+
 
 
 
