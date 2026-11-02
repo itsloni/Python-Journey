@@ -170,7 +170,8 @@ class IncidentTicket:
         self.actions_taken = []
 
     def deploy_countermeasure(self, mitigation_step):
-        
+        self.actions_taken.append(mitigation_step)
+        if self.severity_level == "CRITICAL" and "Isolate" in mitigation_step:  # remind me why does mitigation steps not have self?
 
 
 
