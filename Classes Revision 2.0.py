@@ -177,6 +177,12 @@ class IncidentTicket:
         else:
             normal = f"Countermeasure logged: {mitigation_step}."
             return normal
+incident = IncidentTicket("INC_904", "Critical")
+print(incident.deploy_countermeasure("Allowed"))
+print(incident.deploy_countermeasure("Allowed"))
+print(incident.deploy_countermeasure("Isolate"))
+print(incident.deploy_countermeasure("Allowed"))
+
 
 
 
