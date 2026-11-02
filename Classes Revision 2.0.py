@@ -135,6 +135,35 @@ print(session.log_access_attempt("Guest"))
 print(session.log_access_attempt("Admin_Database_Root"))
 print(session.log_access_attempt("Guest"))
 
+# ==============================================================================
+# CHALLENGE 3: THE AUTOMATED INCIDENT RESPONSE CONTAINER
+# ==============================================================================
+# SCENARIO: You are building an incident tracking asset for a security team.
+#           The object must track a security ticket's status and its containment
+#           actions dynamically over the course of an active investigation.
+#
+# GOAL:
+# 1. Architect a class named 'IncidentTicket' with a constructor (__init__)
+#    that accepts: 'ticket_id' and 'severity_level' (e.g., "Low", "Critical").
+# 2. Automatically initialize a third internal tracking property named 'actions_taken'
+#    as a baseline empty mutable list ([]).
+# 3. Design a custom method inside named 'deploy_countermeasure' that accepts
+#    a single parameter named 'mitigation_step'.
+#    - Append 'mitigation_step' directly into the object's internal 'actions_taken' list.
+#    - If 'severity_level' is exactly "Critical" AND the 'mitigation_step' contains
+#      the word "Isolate", return: "ALERT: Critical ticket {ticket_id} triggered an automated system Isolation!"
+#    - Otherwise, return: "Countermeasure logged: {mitigation_step}."
+#
+# PIPELINE REQUIREMENT:
+# Write your entire execution pipeline below the class completely by yourself.
+# Instantiate a ticket for "INC_904" with a "Critical" severity level. Call your
+# method multiple times with different steps (ensure at least one contains the
+# text "Isolate"), and print your results to verify the log container state!
+# ==============================================================================
+
+# [ARCHITECT YOUR CLASS AND YOUR ENTIRE EXECUTION PIPELINE COMPLETELY AUTONOMOUSLY BELOW]
+
+
 
 
 
