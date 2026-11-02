@@ -174,6 +174,9 @@ class IncidentTicket:
         if self.severity_level == "CRITICAL" and "Isolate" in mitigation_step:  # remind me why does mitigation steps not have self?
             alert = f"ALERT: Critical ticket {self.ticket_id} triggered an automated system Isolation!"
             return alert
+        else:
+            normal = f"Countermeasure logged: {mitigation_step}."
+            return normal
 
 
 
