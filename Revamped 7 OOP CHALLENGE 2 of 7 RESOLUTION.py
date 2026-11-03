@@ -19,5 +19,8 @@ def alert_categorizer(threat_type):
     else:
         absent = f"Unknown Security Domain"
         return absent
+    
+user_input = input("Input Threat type: ")
+print(alert_categorizer(user_input))
 
 
