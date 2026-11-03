@@ -11,5 +11,13 @@
 
 def alert_categorizer(threat_type):
     threat_type_lower = threat_type.lower()
-    
+    reference_data = {"phishing": "Email Security",
+                      "ddos": "Network Security",
+                      "malware": "Endpoint Security"}
+    if threat_type_lower in reference_data:
+        return reference_data[threat_type_lower]
+    else:
+        absent = f"Unknown Security Domain"
+        return absent
+
 
