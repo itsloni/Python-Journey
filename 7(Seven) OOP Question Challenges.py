@@ -15,7 +15,9 @@ def network_packet(packet_size):
             if packet_size_int > 1500:
                 abnormal = f"This Packet is an abnormal Packet"
                 return abnormal
-
+            else:
+                invalid = f"Packet can't be 0. This Packet is an invalid Packet"
+                return invalid
         else:
             normal = f"This Packet is a normal Packet"
             return normal
