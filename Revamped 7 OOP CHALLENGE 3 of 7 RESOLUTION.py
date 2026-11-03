@@ -7,3 +7,10 @@
 # profile to log a disconnection alert, which permanently updates its access status
 # to "DISCONNECTED". Test your architecture by creating a profile for "employee_sarah"
 # and triggering a disconnection.
+
+class VpnGatekeeper:
+    def __init__(self,employee):
+        self.employee = employee
+        self.active_session = 0
+        self.access_status = "CONNECTED"
+
