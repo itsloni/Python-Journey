@@ -17,6 +17,9 @@ def network_packet(packet_size):
         else:
             normal = f"This Packet is a normal Packet"
             return normal
+    else:
+        error = f"Please input a number"
+        return error
 
 
 
