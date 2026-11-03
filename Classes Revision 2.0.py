@@ -35,7 +35,7 @@ class Point:
         print("draw")
 
 point1 = Point(10, 20)
-print(point1.x, point1.y)
+print(f"{point1.x}, {point1.y}\n\n")
 
 
 # Practice
@@ -44,11 +44,11 @@ class Person:
         self.name = name
 
     def talk(self):
-        print(f"Hi {self.name} ")
+        print(f"Hi, I'm {self.name} ")
 
-loni = Person("Loni")
+loni = Person("Loni Ayoola")
 loni.talk()
-bob = Person("Bob")
+bob = Person(f"Bob Smith\n\n")
 bob.talk()
 
 # ==============================================================================
