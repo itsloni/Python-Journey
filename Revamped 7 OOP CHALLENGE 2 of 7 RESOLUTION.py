@@ -14,12 +14,15 @@ def alert_categorizer(threat_type):
     reference_data = {"phishing": "Email Security",
                       "ddos": "Network Security",
                       "malware": "Endpoint Security"}
+
     if threat_type_lower in reference_data:
         return reference_data[threat_type_lower]
     else:
         absent = f"Unknown Security Domain"
         return absent
-    
+    # Or a shorter version to replace the five line IF and ELSE block is :
+    return reference_data.get(threat_type_lower, "Unknown Security Domain")
+
 user_input = input("Input Threat type: ")
 print(alert_categorizer(user_input))
 
