@@ -19,4 +19,8 @@ class VpnGatekeeper:
         minutes = f"{self.active_session} minutes"
         return minutes
 
-    
+    def disconnection_alert(self):
+        self.access_status = "DISCONNECTED"
+        disconnection = f"Dear {self.employee}, you've been DISCONNECTED"
+        return disconnection
+
