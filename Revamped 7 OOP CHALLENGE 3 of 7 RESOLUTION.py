@@ -14,3 +14,9 @@ class VpnGatekeeper:
         self.active_session = 0
         self.access_status = "CONNECTED"
 
+    def counter(self, time_passed):
+        self.active_session += time_passed
+        minutes = f"{self.active_session} minutes"
+        return minutes
+
+    
