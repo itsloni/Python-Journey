@@ -8,3 +8,8 @@
 # isn't listed. Demonstrate it works by passing it a threat type.
 #
 # --------------------------------------------------------------------------------
+
+def alert_categorizer(threat_type):
+    
+
+
