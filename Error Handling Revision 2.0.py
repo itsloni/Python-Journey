@@ -12,7 +12,7 @@ except ValueError: #This is the error exception that catches if the value is wro
 try:
     age = int(input('Age: '))
     income = 20000
-    risk = income/age # Now this is the calculation added now imagine the user inputs 0 as the age, You can see another error happens right?
+    risk = income / age # Now this is the calculation added now imagine the user inputs 0 as the age, You can see another error happens right?
     # cause 20000/0 is not possible mathematically.
     print(age)
 except ZeroDivisionError: # Now you see the Exception needed to catch the error that would have crashed the 20000/0 yhh?
