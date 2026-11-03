@@ -10,6 +10,6 @@
 # --------------------------------------------------------------------------------
 
 def alert_categorizer(threat_type):
+    threat_type_lower = threat_type.lower()
     
-
 
