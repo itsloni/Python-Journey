@@ -16,6 +16,8 @@ def alert_categorizer(threat_type):
                       "malware": "Endpoint Security"}
     if threat_type_lower in reference_data:
         return reference_data[threat_type_lower]
-    
+    else:
+        absent = f"Unknown Security Domain"
+        return absent
 
 
