@@ -25,7 +25,5 @@ def network_packet(packet_size):
         error = f"Please input a number"
         return error
 
-
-
 user_input = input("Enter Packet size: ")
 print(network_packet(user_input))
