@@ -14,4 +14,8 @@ def network_packet(packet_size):
         if packet_size_int == 0 or packet_size_int > 1500:
             abnormal = f"This Packet is an abnormal/Invalid Packet"
             return abnormal
-       
+        
+
+
+user_input = input("Enter Packet size: ")
+print(network_packet(user_input))
