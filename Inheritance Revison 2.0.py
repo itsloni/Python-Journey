@@ -1,5 +1,5 @@
 
-class Mammal:
+class Mammal:# This is the parent class, ypu see its done so that walk iss not repeated in cat and dog, cause the plan was to create the method walk in both walk and cat.
     def walk(self):
         print("Walk")
 class Dog(Mammal):
