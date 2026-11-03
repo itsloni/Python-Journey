@@ -24,3 +24,7 @@ class VpnGatekeeper:
         disconnection = f"Dear {self.employee}, you've been DISCONNECTED"
         return disconnection
 
+profile = VpnGatekeeper("employee_sarah")
+
+print(profile.disconnection_alert())
+print(profile.counter(10))
